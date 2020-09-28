@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "667142025461",
+    "firebase_url": "https://nano-credit-261007.firebaseio.com",
+    "project_id": "nano-credit-261007",
+    "storage_bucket": "nano-credit-261007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667142025461:android:066a1dec8f75b4e67c15bc",
+        "android_client_info": {
+          "package_name": "com.mtechcomm.nanocreditnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667142025461-l7uors54m2lsa7i2us41j35isenf31gt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtechcomm.nanocreditnative",
+            "certificate_hash": "66956d68c7f53f057cf0d07292e8510afb5e5b64"
+          }
+        },
+        {
+          "client_id": "667142025461-32iqo7ikhivcrhbbieshs903bubb9nnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSxxmOKSiuzkZdqp270B6_ym4VvJCEmXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667142025461-32iqo7ikhivcrhbbieshs903bubb9nnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.forLoans.DisplayCreatedUserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/white_bg"
+        android:gravity="center"
+        android:id="@+id/third_screen"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/display_created_user_customer_created_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Agada Godwin C" />
+
+        <TextView
+            android:id="@+id/display_created_user_customer_created_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="ID Number : 98776364721587777" />
+
+        <TextView
+            android:id="@+id/display_created_user_customer_created_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Customer ID : 453267" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/display_created_user_btn_cus_created_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/purple_btn_color"
+                android:elevation="4dp"
+                android:fontFamily="sans-serif"
+                android:text="Continue"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

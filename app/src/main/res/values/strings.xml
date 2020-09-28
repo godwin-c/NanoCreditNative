@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">NanoCreditNative</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apply_for_loan_text">Apply</string>
+    <string name="payment_schedule_for_loan_text">Schedule</string>
+    <string name="availlable_discount_for_loan_text">Discounts</string>
+    <string name="loan_history_for_loan_text">History</string>
+    <string name="loan_summary_for_loan_text">Summary</string>
+    <string name="register_activity_title">Create Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="err_msg_fname">Enter your first name</string>
+    <string name="err_msg_lname">Enter your last name</string>
+    <string name="err_msg_phone">Enter Valid Phone number</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_date_of_birth">Choose Date of Birth</string>
+    <string name="err_msg_secret">Choose a Password </string>
+    <string name="wrong_conf_pin">Password doesn\'t Match</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--    Lenddodatasdk Credentials-->
+    <string name="partner_script_id">5defb6c71d523a0dd834de5a</string>
+    <string name="api_secret">oMWGzzAFXWFIaakCm849kapUESlSKTK5BaiG2O2Eav5Vo5y3JWKNvKIvs9Be4eCAz3Otp13LJyKRj2mG1/LIig==</string>
+    <string name="api_key">5dca0e6c6b3a49f96ed747da</string>
+    <string name="welcome_to_nano_credit">Welcome to Nano Credit</string>
+
+    <!--    Retrofit Credentials-->
+    <string name="AUTH_BASE_URL">https://nlp-gh.oncustomer.tech/api</string>
+    <string name="API_USER_CREDENTIALS">ussd:ussd1234:SHARE</string>
+    <string name="BASE_URL">https://nlp-gh.oncustomer.tech/api/ussd</string>
+    <string name="nlp_username">ussd</string>
+    <string name="nlp_password">ussd1234:SHARE</string>
+    <string name="nlp_bus_unit_code">SHARE</string>
+    <string name="nano_credit_uses_the_data">Nano Credit Uses the data on your phone and email to provide quick and convenient loans</string>
+    <string name="your_data_will_be_protected_by_strong_encryption">Your data will be protected by strong encryption techniques and used only for qualifying you for a loan</string>
+    <string name="your_application_has_been_received_and_will_be_proceessed">We need your permission to proceed with the credit score computation. Proceed?</string>
+    <string name="error_customer_exist">The customer already exists</string>
+    <string name="scan_ot_add_id_no">You need to either scan or enter your ID number</string>
+    <string name="account_number_missing">Account number missing</string>
+    <string name="you_have_an_ongoing_loan">It seems you have an ongoing Loan. You have to pay up your loan before you can take up another</string>
+    <string name="warning_about_prioritydata">Nano Credit will be collecting some information from your phone to enable it determine your Credit Score</string>
+
+    <!-- A list of Banks -->
+    <string-array name="bank_array">
+        <item>Choose Bank</item>
+        <item>First Bank</item>
+        <item>Union Bank</item>
+        <item>United Bank for Africa</item>
+        <item>Guaranty Trust Bank</item>
+        <item>Polaris Bank</item>
+        <item>Zenith Bank</item>
+        <item>Unity Bank</item>
+        <item>City Bank</item>
+        <item>Stanbic IBTC</item>
+        <item>Standard Chattered Bank</item>
+    </string-array>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+    <string name="waiting_for_verification_code">Waiting for verification code</string>
+    <string name="enter_verification_code">enter verification code</string>
+    <string name="no_user_found_on_this_device">No User found on this device</string>
+    <string name="after_analysing_the_information_">To take a loan, please enter an amount not more than your credit limit of </string>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <string name="sharepref_files">all_user_saved_files</string>
+    <string name="created_user_details">created_user_details</string>
+    <string name="created_customer_result">created_customer_result</string>
+    <string name="customer_enquiry_result">customer_enquiry_result</string>
+    <string name="customer_loan_details_save">customer_loan_details</string>
+    <string name="customer_result_ready">customer_score_ready</string>
+</resources>

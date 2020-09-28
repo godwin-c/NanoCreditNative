@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/green_grey_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.forLoans.RequestForLoanFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/app_logo_imv"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/app_logo"/>
+
+        <Button
+            android:id="@+id/display_created_user_btn_retry_loan_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:background="@color/purple_btn_color"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif"
+            android:text="retry"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</FrameLayout>

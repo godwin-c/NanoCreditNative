@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/apply_for_loan_menu_item"
+        android:icon="@drawable/apply_for_loan"
+        android:title="@string/apply_for_loan_text" />
+
+    <item
+        android:id="@+id/payment_schedule_menu_item"
+        android:icon="@drawable/payment_schedule"
+        android:title="@string/payment_schedule_for_loan_text" />
+
+    <item
+        android:id="@+id/availlable_discount_menu_item"
+        android:icon="@drawable/customer_care"
+        android:title="@string/availlable_discount_for_loan_text" />
+    <item
+        android:id="@+id/loan_summary_menu_item"
+        android:icon="@drawable/loan_summary"
+        android:title="@string/loan_summary_for_loan_text" />
+
+    <item
+        android:id="@+id/loan_history_menu_item"
+        android:icon="@drawable/loan_history"
+        android:title="@string/loan_history_for_loan_text" />
+</menu>

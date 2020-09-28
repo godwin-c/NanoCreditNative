@@ -1,0 +1,3803 @@
+{
+  "country_codes": [
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe0d",
+      "country": "USA and Canada",
+      "code": "+1",
+      "_created": "2020-07-13T12:06:22.723Z",
+      "_changed": "2020-07-13T12:06:22.723Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "usa",
+        "and",
+        "canada",
+        "+1"
+      ],
+      "_tags": "api usa and canada +1",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe0e",
+      "country": "Bermuda or 809",
+      "code": "+1",
+      "_created": "2020-07-13T12:06:22.755Z",
+      "_changed": "2020-07-13T12:06:22.755Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bermuda",
+        "or",
+        "809",
+        "+1"
+      ],
+      "_tags": "api bermuda or 809 +1",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe0f",
+      "country": "Bermuda or 809",
+      "code": "+441",
+      "_created": "2020-07-13T12:06:22.767Z",
+      "_changed": "2020-07-13T12:06:22.767Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bermuda",
+        "or",
+        "809",
+        "+441"
+      ],
+      "_tags": "api bermuda or 809 +441",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe10",
+      "country": "Egypt",
+      "code": "+20",
+      "_created": "2020-07-13T12:06:22.780Z",
+      "_changed": "2020-07-13T12:06:22.780Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "egypt",
+        "+20"
+      ],
+      "_tags": "api egypt +20",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe11",
+      "country": "unused Morocco",
+      "code": "+210",
+      "_created": "2020-07-13T12:06:22.791Z",
+      "_changed": "2020-07-13T12:06:22.791Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "morocco",
+        "+210"
+      ],
+      "_tags": "api unused morocco +210",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe12",
+      "country": "unused Morocco",
+      "code": "+211",
+      "_created": "2020-07-13T12:06:22.804Z",
+      "_changed": "2020-07-13T12:06:22.804Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "morocco",
+        "+211"
+      ],
+      "_tags": "api unused morocco +211",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe13",
+      "country": "Morocco",
+      "code": "+212",
+      "_created": "2020-07-13T12:06:22.827Z",
+      "_changed": "2020-07-13T12:06:22.827Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "morocco",
+        "+212"
+      ],
+      "_tags": "api morocco +212",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe14",
+      "country": "Algeria",
+      "code": "+213",
+      "_created": "2020-07-13T12:06:22.839Z",
+      "_changed": "2020-07-13T12:06:22.839Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "algeria",
+        "+213"
+      ],
+      "_tags": "api algeria +213",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe15",
+      "country": "unused Algeria",
+      "code": "+214",
+      "_created": "2020-07-13T12:06:22.849Z",
+      "_changed": "2020-07-13T12:06:22.849Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "algeria",
+        "+214"
+      ],
+      "_tags": "api unused algeria +214",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe16",
+      "country": "unused Algeria",
+      "code": "+215",
+      "_created": "2020-07-13T12:06:22.864Z",
+      "_changed": "2020-07-13T12:06:22.864Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "algeria",
+        "+215"
+      ],
+      "_tags": "api unused algeria +215",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe17",
+      "country": "Tunisia",
+      "code": "+216",
+      "_created": "2020-07-13T12:06:22.882Z",
+      "_changed": "2020-07-13T12:06:22.882Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tunisia",
+        "+216"
+      ],
+      "_tags": "api tunisia +216",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe18",
+      "country": "unused Tunisia",
+      "code": "+217",
+      "_created": "2020-07-13T12:06:22.896Z",
+      "_changed": "2020-07-13T12:06:22.896Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "tunisia",
+        "+217"
+      ],
+      "_tags": "api unused tunisia +217",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe19",
+      "country": "Libya",
+      "code": "+218",
+      "_created": "2020-07-13T12:06:22.911Z",
+      "_changed": "2020-07-13T12:06:22.911Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "libya",
+        "+218"
+      ],
+      "_tags": "api libya +218",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe1a",
+      "country": "unused Libya",
+      "code": "+219",
+      "_created": "2020-07-13T12:06:22.922Z",
+      "_changed": "2020-07-13T12:06:22.922Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "unused",
+        "libya",
+        "+219"
+      ],
+      "_tags": "api unused libya +219",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe1b",
+      "country": "(The) Gambia",
+      "code": "+220",
+      "_created": "2020-07-13T12:06:22.937Z",
+      "_changed": "2020-07-13T12:06:22.937Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "(the)",
+        "gambia",
+        "+220"
+      ],
+      "_tags": "api (the) gambia +220",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe1c",
+      "country": "Senegal",
+      "code": "+221",
+      "_created": "2020-07-13T12:06:22.959Z",
+      "_changed": "2020-07-13T12:06:22.959Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "senegal",
+        "+221"
+      ],
+      "_tags": "api senegal +221",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3eb1b8a9000000fe1d",
+      "country": "Mauritania",
+      "code": "+222",
+      "_created": "2020-07-13T12:06:22.982Z",
+      "_changed": "2020-07-13T12:06:22.982Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mauritania",
+        "+222"
+      ],
+      "_tags": "api mauritania +222",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe1e",
+      "country": "Mali",
+      "code": "+223",
+      "_created": "2020-07-13T12:06:22.995Z",
+      "_changed": "2020-07-13T12:06:22.995Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mali",
+        "+223"
+      ],
+      "_tags": "api mali +223",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe1f",
+      "country": "Guinea",
+      "code": "+224",
+      "_created": "2020-07-13T12:06:23.014Z",
+      "_changed": "2020-07-13T12:06:23.014Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guinea",
+        "+224"
+      ],
+      "_tags": "api guinea +224",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe20",
+      "country": "Cote d'Ivoire",
+      "code": "+225",
+      "_created": "2020-07-13T12:06:23.033Z",
+      "_changed": "2020-07-13T12:06:23.033Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cote",
+        "d'ivoire",
+        "+225"
+      ],
+      "_tags": "api cote d'ivoire +225",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe21",
+      "country": "Burkina Faso",
+      "code": "+226",
+      "_created": "2020-07-13T12:06:23.039Z",
+      "_changed": "2020-07-13T12:06:23.039Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "burkina",
+        "faso",
+        "+226"
+      ],
+      "_tags": "api burkina faso +226",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe22",
+      "country": "Niger",
+      "code": "+227",
+      "_created": "2020-07-13T12:06:23.049Z",
+      "_changed": "2020-07-13T12:06:23.049Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "niger",
+        "+227"
+      ],
+      "_tags": "api niger +227",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe23",
+      "country": "Togo",
+      "code": "+228",
+      "_created": "2020-07-13T12:06:23.055Z",
+      "_changed": "2020-07-13T12:06:23.055Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "togo",
+        "+228"
+      ],
+      "_tags": "api togo +228",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe24",
+      "country": "Benin",
+      "code": "+229",
+      "_created": "2020-07-13T12:06:23.061Z",
+      "_changed": "2020-07-13T12:06:23.061Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "benin",
+        "+229"
+      ],
+      "_tags": "api benin +229",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe25",
+      "country": "Mauritius",
+      "code": "+230",
+      "_created": "2020-07-13T12:06:23.067Z",
+      "_changed": "2020-07-13T12:06:23.067Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mauritius",
+        "+230"
+      ],
+      "_tags": "api mauritius +230",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe26",
+      "country": "Liberia",
+      "code": "+231",
+      "_created": "2020-07-13T12:06:23.073Z",
+      "_changed": "2020-07-13T12:06:23.073Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "liberia",
+        "+231"
+      ],
+      "_tags": "api liberia +231",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe27",
+      "country": "Sierra Leone",
+      "code": "+232",
+      "_created": "2020-07-13T12:06:23.079Z",
+      "_changed": "2020-07-13T12:06:23.079Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "sierra",
+        "leone",
+        "+232"
+      ],
+      "_tags": "api sierra leone +232",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe28",
+      "country": "Ghana",
+      "code": "+233",
+      "_created": "2020-07-13T12:06:23.085Z",
+      "_changed": "2020-07-13T12:06:23.085Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ghana",
+        "+233"
+      ],
+      "_tags": "api ghana +233",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe29",
+      "country": "Nigeria",
+      "code": "+234",
+      "_created": "2020-07-13T12:06:23.091Z",
+      "_changed": "2020-07-13T12:06:23.091Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "nigeria",
+        "+234"
+      ],
+      "_tags": "api nigeria +234",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2a",
+      "country": "Chad",
+      "code": "+235",
+      "_created": "2020-07-13T12:06:23.097Z",
+      "_changed": "2020-07-13T12:06:23.097Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "chad",
+        "+235"
+      ],
+      "_tags": "api chad +235",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2b",
+      "country": "Central African Republic",
+      "code": "+236",
+      "_created": "2020-07-13T12:06:23.104Z",
+      "_changed": "2020-07-13T12:06:23.104Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "central",
+        "african",
+        "republic",
+        "+236"
+      ],
+      "_tags": "api central african republic +236",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2c",
+      "country": "Cameroon",
+      "code": "+237",
+      "_created": "2020-07-13T12:06:23.110Z",
+      "_changed": "2020-07-13T12:06:23.110Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cameroon",
+        "+237"
+      ],
+      "_tags": "api cameroon +237",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2d",
+      "country": "Cape Verde",
+      "code": "+238",
+      "_created": "2020-07-13T12:06:23.116Z",
+      "_changed": "2020-07-13T12:06:23.116Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cape",
+        "verde",
+        "+238"
+      ],
+      "_tags": "api cape verde +238",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2e",
+      "country": "Sao Tome and Principe",
+      "code": "+239",
+      "_created": "2020-07-13T12:06:23.122Z",
+      "_changed": "2020-07-13T12:06:23.122Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "sao",
+        "tome",
+        "and",
+        "principe",
+        "+239"
+      ],
+      "_tags": "api sao tome and principe +239",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe2f",
+      "country": "Equatorial Guinea",
+      "code": "+240",
+      "_created": "2020-07-13T12:06:23.128Z",
+      "_changed": "2020-07-13T12:06:23.128Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "equatorial",
+        "guinea",
+        "+240"
+      ],
+      "_tags": "api equatorial guinea +240",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe30",
+      "country": "Gabon (Gabonese Republic)",
+      "code": "+241",
+      "_created": "2020-07-13T12:06:23.138Z",
+      "_changed": "2020-07-13T12:06:23.138Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "gabon",
+        "(gabonese",
+        "republic)",
+        "+241"
+      ],
+      "_tags": "api gabon (gabonese republic) +241",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe31",
+      "country": "Congo",
+      "code": "+242",
+      "_created": "2020-07-13T12:06:23.144Z",
+      "_changed": "2020-07-13T12:06:23.144Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "congo",
+        "+242"
+      ],
+      "_tags": "api congo +242",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe32",
+      "country": " Zaire",
+      "code": "+243",
+      "_created": "2020-07-13T12:06:23.150Z",
+      "_changed": "2020-07-13T12:06:23.150Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "zaire",
+        "+243"
+      ],
+      "_tags": "api zaire +243",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe33",
+      "country": "Angola",
+      "code": "+244",
+      "_created": "2020-07-13T12:06:23.159Z",
+      "_changed": "2020-07-13T12:06:23.159Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "angola",
+        "+244"
+      ],
+      "_tags": "api angola +244",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe34",
+      "country": " Guinea-Bissau",
+      "code": "+245",
+      "_created": "2020-07-13T12:06:23.165Z",
+      "_changed": "2020-07-13T12:06:23.165Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guinea-bissau",
+        "+245"
+      ],
+      "_tags": "api guinea-bissau +245",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe35",
+      "country": "Diego Garcia",
+      "code": "+246",
+      "_created": "2020-07-13T12:06:23.171Z",
+      "_changed": "2020-07-13T12:06:23.171Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "diego",
+        "garcia",
+        "+246"
+      ],
+      "_tags": "api diego garcia +246",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe36",
+      "country": "Ascension Island",
+      "code": "+247",
+      "_created": "2020-07-13T12:06:23.178Z",
+      "_changed": "2020-07-13T12:06:23.178Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ascension",
+        "island",
+        "+247"
+      ],
+      "_tags": "api ascension island +247",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe37",
+      "country": "Seychelles",
+      "code": "+248",
+      "_created": "2020-07-13T12:06:23.184Z",
+      "_changed": "2020-07-13T12:06:23.184Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "seychelles",
+        "+248"
+      ],
+      "_tags": "api seychelles +248",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe38",
+      "country": "Sudan",
+      "code": "+249",
+      "_created": "2020-07-13T12:06:23.190Z",
+      "_changed": "2020-07-13T12:06:23.190Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "sudan",
+        "+249"
+      ],
+      "_tags": "api sudan +249",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe39",
+      "country": "Rwanda",
+      "code": "+250",
+      "_created": "2020-07-13T12:06:23.196Z",
+      "_changed": "2020-07-13T12:06:23.196Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "rwanda",
+        "+250"
+      ],
+      "_tags": "api rwanda +250",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3a",
+      "country": "Ethiopia",
+      "code": "+251",
+      "_created": "2020-07-13T12:06:23.202Z",
+      "_changed": "2020-07-13T12:06:23.202Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ethiopia",
+        "+251"
+      ],
+      "_tags": "api ethiopia +251",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3b",
+      "country": "Somalia",
+      "code": "+252",
+      "_created": "2020-07-13T12:06:23.209Z",
+      "_changed": "2020-07-13T12:06:23.209Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "somalia",
+        "+252"
+      ],
+      "_tags": "api somalia +252",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3c",
+      "country": "Djibouti",
+      "code": "+253",
+      "_created": "2020-07-13T12:06:23.215Z",
+      "_changed": "2020-07-13T12:06:23.215Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "djibouti",
+        "+253"
+      ],
+      "_tags": "api djibouti +253",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3d",
+      "country": "Kenya",
+      "code": "+254",
+      "_created": "2020-07-13T12:06:23.223Z",
+      "_changed": "2020-07-13T12:06:23.223Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "kenya",
+        "+254"
+      ],
+      "_tags": "api kenya +254",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3e",
+      "country": "Tanzania (includes Zanzibar)",
+      "code": "+255",
+      "_created": "2020-07-13T12:06:23.230Z",
+      "_changed": "2020-07-13T12:06:23.230Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tanzania",
+        "(includes",
+        "zanzibar)",
+        "+255"
+      ],
+      "_tags": "api tanzania (includes zanzibar) +255",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe3f",
+      "country": "Uganda",
+      "code": "+256",
+      "_created": "2020-07-13T12:06:23.236Z",
+      "_changed": "2020-07-13T12:06:23.236Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "uganda",
+        "+256"
+      ],
+      "_tags": "api uganda +256",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe40",
+      "country": "Burundi",
+      "code": "+257",
+      "_created": "2020-07-13T12:06:23.246Z",
+      "_changed": "2020-07-13T12:06:23.246Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "burundi",
+        "+257"
+      ],
+      "_tags": "api burundi +257",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe41",
+      "country": "Mozambique",
+      "code": "+258",
+      "_created": "2020-07-13T12:06:23.252Z",
+      "_changed": "2020-07-13T12:06:23.252Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mozambique",
+        "+258"
+      ],
+      "_tags": "api mozambique +258",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe42",
+      "country": "Zanzibar",
+      "code": "+259",
+      "_created": "2020-07-13T12:06:23.259Z",
+      "_changed": "2020-07-13T12:06:23.259Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "zanzibar",
+        "+259"
+      ],
+      "_tags": "api zanzibar +259",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe43",
+      "country": "Zambia",
+      "code": "+260",
+      "_created": "2020-07-13T12:06:23.265Z",
+      "_changed": "2020-07-13T12:06:23.265Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "zambia",
+        "+260"
+      ],
+      "_tags": "api zambia +260",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe44",
+      "country": "Madagascar",
+      "code": "+261",
+      "_created": "2020-07-13T12:06:23.272Z",
+      "_changed": "2020-07-13T12:06:23.272Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "madagascar",
+        "+261"
+      ],
+      "_tags": "api madagascar +261",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe45",
+      "country": "Reunion (France)",
+      "code": "+262",
+      "_created": "2020-07-13T12:06:23.278Z",
+      "_changed": "2020-07-13T12:06:23.278Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "reunion",
+        "(france)",
+        "+262"
+      ],
+      "_tags": "api reunion (france) +262",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe46",
+      "country": "Zimbabwe",
+      "code": "+263",
+      "_created": "2020-07-13T12:06:23.284Z",
+      "_changed": "2020-07-13T12:06:23.284Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "zimbabwe",
+        "+263"
+      ],
+      "_tags": "api zimbabwe +263",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe47",
+      "country": "Namibia",
+      "code": "+264",
+      "_created": "2020-07-13T12:06:23.291Z",
+      "_changed": "2020-07-13T12:06:23.291Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "namibia",
+        "+264"
+      ],
+      "_tags": "api namibia +264",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe48",
+      "country": "Malawi",
+      "code": "+265",
+      "_created": "2020-07-13T12:06:23.297Z",
+      "_changed": "2020-07-13T12:06:23.297Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "malawi",
+        "+265"
+      ],
+      "_tags": "api malawi +265",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe49",
+      "country": "Lesotho",
+      "code": "+266",
+      "_created": "2020-07-13T12:06:23.303Z",
+      "_changed": "2020-07-13T12:06:23.303Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "lesotho",
+        "+266"
+      ],
+      "_tags": "api lesotho +266",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4a",
+      "country": "Botswana",
+      "code": "+267",
+      "_created": "2020-07-13T12:06:23.310Z",
+      "_changed": "2020-07-13T12:06:23.310Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "botswana",
+        "+267"
+      ],
+      "_tags": "api botswana +267",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4b",
+      "country": "Swaziland",
+      "code": "+268",
+      "_created": "2020-07-13T12:06:23.316Z",
+      "_changed": "2020-07-13T12:06:23.316Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "swaziland",
+        "+268"
+      ],
+      "_tags": "api swaziland +268",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4c",
+      "country": "Comoros",
+      "code": "+269",
+      "_created": "2020-07-13T12:06:23.322Z",
+      "_changed": "2020-07-13T12:06:23.322Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "comoros",
+        "+269"
+      ],
+      "_tags": "api comoros +269",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4d",
+      "country": "South Africa",
+      "code": "+27",
+      "_created": "2020-07-13T12:06:23.329Z",
+      "_changed": "2020-07-13T12:06:23.329Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "south",
+        "africa",
+        "+27"
+      ],
+      "_tags": "api south africa +27",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4e",
+      "country": "St. Helena",
+      "code": "+290",
+      "_created": "2020-07-13T12:06:23.336Z",
+      "_changed": "2020-07-13T12:06:23.336Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "st",
+        "helena",
+        "+290"
+      ],
+      "_tags": "api st helena +290",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe4f",
+      "country": "San Marino",
+      "code": "+295",
+      "_created": "2020-07-13T12:06:23.342Z",
+      "_changed": "2020-07-13T12:06:23.342Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "san",
+        "marino",
+        "+295"
+      ],
+      "_tags": "api san marino +295",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe50",
+      "country": "Aruba",
+      "code": "+297",
+      "_created": "2020-07-13T12:06:23.352Z",
+      "_changed": "2020-07-13T12:06:23.352Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "aruba",
+        "+297"
+      ],
+      "_tags": "api aruba +297",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe51",
+      "country": "Faroe (Faeroe) Islands",
+      "code": "+298",
+      "_created": "2020-07-13T12:06:23.358Z",
+      "_changed": "2020-07-13T12:06:23.358Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "faroe",
+        "(faeroe)",
+        "islands",
+        "+298"
+      ],
+      "_tags": "api faroe (faeroe) islands +298",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe52",
+      "country": "Greenland",
+      "code": "+299",
+      "_created": "2020-07-13T12:06:23.364Z",
+      "_changed": "2020-07-13T12:06:23.364Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "greenland",
+        "+299"
+      ],
+      "_tags": "api greenland +299",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe53",
+      "country": "Greece",
+      "code": "+30",
+      "_created": "2020-07-13T12:06:23.378Z",
+      "_changed": "2020-07-13T12:06:23.378Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "greece",
+        "+30"
+      ],
+      "_tags": "api greece +30",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe54",
+      "country": "Netherlands",
+      "code": "+31",
+      "_created": "2020-07-13T12:06:23.384Z",
+      "_changed": "2020-07-13T12:06:23.384Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "netherlands",
+        "+31"
+      ],
+      "_tags": "api netherlands +31",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe55",
+      "country": "Belgium",
+      "code": "+32",
+      "_created": "2020-07-13T12:06:23.392Z",
+      "_changed": "2020-07-13T12:06:23.392Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "belgium",
+        "+32"
+      ],
+      "_tags": "api belgium +32",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe56",
+      "country": "France",
+      "code": "+33",
+      "_created": "2020-07-13T12:06:23.400Z",
+      "_changed": "2020-07-13T12:06:23.400Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "france",
+        "+33"
+      ],
+      "_tags": "api france +33",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe57",
+      "country": "Spain",
+      "code": "+34",
+      "_created": "2020-07-13T12:06:23.408Z",
+      "_changed": "2020-07-13T12:06:23.408Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "spain",
+        "+34"
+      ],
+      "_tags": "api spain +34",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe58",
+      "country": "Gibraltar",
+      "code": "+350",
+      "_created": "2020-07-13T12:06:23.414Z",
+      "_changed": "2020-07-13T12:06:23.414Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "gibraltar",
+        "+350"
+      ],
+      "_tags": "api gibraltar +350",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe59",
+      "country": "Portugal",
+      "code": "+351",
+      "_created": "2020-07-13T12:06:23.421Z",
+      "_changed": "2020-07-13T12:06:23.421Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "portugal",
+        "+351"
+      ],
+      "_tags": "api portugal +351",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5a",
+      "country": "Luxembourg",
+      "code": "+352",
+      "_created": "2020-07-13T12:06:23.427Z",
+      "_changed": "2020-07-13T12:06:23.427Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "luxembourg",
+        "+352"
+      ],
+      "_tags": "api luxembourg +352",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5b",
+      "country": "Ireland",
+      "code": "+353",
+      "_created": "2020-07-13T12:06:23.433Z",
+      "_changed": "2020-07-13T12:06:23.433Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ireland",
+        "+353"
+      ],
+      "_tags": "api ireland +353",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5c",
+      "country": "Iceland",
+      "code": "+354",
+      "_created": "2020-07-13T12:06:23.441Z",
+      "_changed": "2020-07-13T12:06:23.441Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "iceland",
+        "+354"
+      ],
+      "_tags": "api iceland +354",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5d",
+      "country": "Albania",
+      "code": "+355",
+      "_created": "2020-07-13T12:06:23.448Z",
+      "_changed": "2020-07-13T12:06:23.448Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "albania",
+        "+355"
+      ],
+      "_tags": "api albania +355",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5e",
+      "country": "Malta",
+      "code": "+356",
+      "_created": "2020-07-13T12:06:23.454Z",
+      "_changed": "2020-07-13T12:06:23.454Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "malta",
+        "+356"
+      ],
+      "_tags": "api malta +356",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe5f",
+      "country": "Cyprus",
+      "code": "+357",
+      "_created": "2020-07-13T12:06:23.460Z",
+      "_changed": "2020-07-13T12:06:23.460Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cyprus",
+        "+357"
+      ],
+      "_tags": "api cyprus +357",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe60",
+      "country": "Finland",
+      "code": "+358",
+      "_created": "2020-07-13T12:06:23.468Z",
+      "_changed": "2020-07-13T12:06:23.468Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "finland",
+        "+358"
+      ],
+      "_tags": "api finland +358",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe61",
+      "country": "Bulgaria",
+      "code": "+359",
+      "_created": "2020-07-13T12:06:23.475Z",
+      "_changed": "2020-07-13T12:06:23.475Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bulgaria",
+        "+359"
+      ],
+      "_tags": "api bulgaria +359",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe62",
+      "country": "Hungary",
+      "code": "+36",
+      "_created": "2020-07-13T12:06:23.482Z",
+      "_changed": "2020-07-13T12:06:23.482Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "hungary",
+        "+36"
+      ],
+      "_tags": "api hungary +36",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe63",
+      "country": "Lithuania",
+      "code": "+370",
+      "_created": "2020-07-13T12:06:23.490Z",
+      "_changed": "2020-07-13T12:06:23.490Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "lithuania",
+        "+370"
+      ],
+      "_tags": "api lithuania +370",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe64",
+      "country": "Latvia",
+      "code": "+371",
+      "_created": "2020-07-13T12:06:23.497Z",
+      "_changed": "2020-07-13T12:06:23.497Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "latvia",
+        "+371"
+      ],
+      "_tags": "api latvia +371",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe65",
+      "country": "Moldova",
+      "code": "+373",
+      "_created": "2020-07-13T12:06:23.507Z",
+      "_changed": "2020-07-13T12:06:23.507Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "moldova",
+        "+373"
+      ],
+      "_tags": "api moldova +373",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe66",
+      "country": "Armenia",
+      "code": "+374",
+      "_created": "2020-07-13T12:06:23.514Z",
+      "_changed": "2020-07-13T12:06:23.514Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "armenia",
+        "+374"
+      ],
+      "_tags": "api armenia +374",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe67",
+      "country": "Belarus",
+      "code": "+375",
+      "_created": "2020-07-13T12:06:23.522Z",
+      "_changed": "2020-07-13T12:06:23.522Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "belarus",
+        "+375"
+      ],
+      "_tags": "api belarus +375",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe68",
+      "country": "Monaco",
+      "code": "+377",
+      "_created": "2020-07-13T12:06:23.532Z",
+      "_changed": "2020-07-13T12:06:23.532Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "monaco",
+        "+377"
+      ],
+      "_tags": "api monaco +377",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe69",
+      "country": "Yugoslavia",
+      "code": "+38",
+      "_created": "2020-07-13T12:06:23.539Z",
+      "_changed": "2020-07-13T12:06:23.539Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "yugoslavia",
+        "+38"
+      ],
+      "_tags": "api yugoslavia +38",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6a",
+      "country": "Ukraine",
+      "code": "+380",
+      "_created": "2020-07-13T12:06:23.547Z",
+      "_changed": "2020-07-13T12:06:23.547Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ukraine",
+        "+380"
+      ],
+      "_tags": "api ukraine +380",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6b",
+      "country": "Serbia",
+      "code": "+381",
+      "_created": "2020-07-13T12:06:23.556Z",
+      "_changed": "2020-07-13T12:06:23.556Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "serbia",
+        "+381"
+      ],
+      "_tags": "api serbia +381",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6c",
+      "country": "Croatia",
+      "code": "+385",
+      "_created": "2020-07-13T12:06:23.566Z",
+      "_changed": "2020-07-13T12:06:23.566Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "croatia",
+        "+385"
+      ],
+      "_tags": "api croatia +385",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6d",
+      "country": "Bosnia",
+      "code": "+387",
+      "_created": "2020-07-13T12:06:23.573Z",
+      "_changed": "2020-07-13T12:06:23.573Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bosnia",
+        "+387"
+      ],
+      "_tags": "api bosnia +387",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6e",
+      "country": "Herzegovina",
+      "code": "+387",
+      "_created": "2020-07-13T12:06:23.581Z",
+      "_changed": "2020-07-13T12:06:23.581Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "herzegovina",
+        "+387"
+      ],
+      "_tags": "api herzegovina +387",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe6f",
+      "country": "Fyrom (Macedonia)",
+      "code": "+389",
+      "_created": "2020-07-13T12:06:23.588Z",
+      "_changed": "2020-07-13T12:06:23.588Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "fyrom",
+        "(macedonia)",
+        "+389"
+      ],
+      "_tags": "api fyrom (macedonia) +389",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe70",
+      "country": "Italy",
+      "code": "+39",
+      "_created": "2020-07-13T12:06:23.596Z",
+      "_changed": "2020-07-13T12:06:23.596Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "italy",
+        "+39"
+      ],
+      "_tags": "api italy +39",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe71",
+      "country": "Vatican City",
+      "code": "+39-66982",
+      "_created": "2020-07-13T12:06:23.604Z",
+      "_changed": "2020-07-13T12:06:23.604Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "vatican",
+        "city",
+        "+39-66982"
+      ],
+      "_tags": "api vatican city +39-66982",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe72",
+      "country": "Romania",
+      "code": "+40",
+      "_created": "2020-07-13T12:06:23.613Z",
+      "_changed": "2020-07-13T12:06:23.613Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "romania",
+        "+40"
+      ],
+      "_tags": "api romania +40",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe73",
+      "country": "Liechtenstein",
+      "code": "+41",
+      "_created": "2020-07-13T12:06:23.621Z",
+      "_changed": "2020-07-13T12:06:23.621Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "liechtenstein",
+        "+41"
+      ],
+      "_tags": "api liechtenstein +41",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe74",
+      "country": "Switzerland",
+      "code": "+41",
+      "_created": "2020-07-13T12:06:23.629Z",
+      "_changed": "2020-07-13T12:06:23.629Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "switzerland",
+        "+41"
+      ],
+      "_tags": "api switzerland +41",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe75",
+      "country": "Czechoslovakia",
+      "code": "+42",
+      "_created": "2020-07-13T12:06:23.638Z",
+      "_changed": "2020-07-13T12:06:23.638Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "czechoslovakia",
+        "+42"
+      ],
+      "_tags": "api czechoslovakia +42",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe76",
+      "country": "Austria",
+      "code": "+43",
+      "_created": "2020-07-13T12:06:23.649Z",
+      "_changed": "2020-07-13T12:06:23.649Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "austria",
+        "+43"
+      ],
+      "_tags": "api austria +43",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe77",
+      "country": "United Kingdom",
+      "code": "+44",
+      "_created": "2020-07-13T12:06:23.657Z",
+      "_changed": "2020-07-13T12:06:23.657Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "united",
+        "kingdom",
+        "+44"
+      ],
+      "_tags": "api united kingdom +44",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe78",
+      "country": "Denmark",
+      "code": "+45",
+      "_created": "2020-07-13T12:06:23.667Z",
+      "_changed": "2020-07-13T12:06:23.667Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "denmark",
+        "+45"
+      ],
+      "_tags": "api denmark +45",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe79",
+      "country": "Sweden",
+      "code": "+46",
+      "_created": "2020-07-13T12:06:23.685Z",
+      "_changed": "2020-07-13T12:06:23.685Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "sweden",
+        "+46"
+      ],
+      "_tags": "api sweden +46",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7a",
+      "country": "Norway",
+      "code": "+47",
+      "_created": "2020-07-13T12:06:23.707Z",
+      "_changed": "2020-07-13T12:06:23.707Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "norway",
+        "+47"
+      ],
+      "_tags": "api norway +47",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7b",
+      "country": "Poland",
+      "code": "+48",
+      "_created": "2020-07-13T12:06:23.748Z",
+      "_changed": "2020-07-13T12:06:23.748Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "poland",
+        "+48"
+      ],
+      "_tags": "api poland +48",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7c",
+      "country": "Germany",
+      "code": "+49",
+      "_created": "2020-07-13T12:06:23.787Z",
+      "_changed": "2020-07-13T12:06:23.787Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "germany",
+        "+49"
+      ],
+      "_tags": "api germany +49",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7d",
+      "country": "Falkland Islands",
+      "code": "+500",
+      "_created": "2020-07-13T12:06:23.804Z",
+      "_changed": "2020-07-13T12:06:23.804Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "falkland",
+        "islands",
+        "+500"
+      ],
+      "_tags": "api falkland islands +500",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7e",
+      "country": "Belize",
+      "code": "+501",
+      "_created": "2020-07-13T12:06:23.819Z",
+      "_changed": "2020-07-13T12:06:23.819Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "belize",
+        "+501"
+      ],
+      "_tags": "api belize +501",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe7f",
+      "country": "Guatemala",
+      "code": "+502",
+      "_created": "2020-07-13T12:06:23.839Z",
+      "_changed": "2020-07-13T12:06:23.839Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guatemala",
+        "+502"
+      ],
+      "_tags": "api guatemala +502",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe80",
+      "country": "El Salvador",
+      "code": "+503",
+      "_created": "2020-07-13T12:06:23.852Z",
+      "_changed": "2020-07-13T12:06:23.852Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "el",
+        "salvador",
+        "+503"
+      ],
+      "_tags": "api el salvador +503",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe81",
+      "country": "Honduras",
+      "code": "+504",
+      "_created": "2020-07-13T12:06:23.869Z",
+      "_changed": "2020-07-13T12:06:23.869Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "honduras",
+        "+504"
+      ],
+      "_tags": "api honduras +504",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe82",
+      "country": "Nicaragua",
+      "code": "+505",
+      "_created": "2020-07-13T12:06:23.890Z",
+      "_changed": "2020-07-13T12:06:23.890Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "nicaragua",
+        "+505"
+      ],
+      "_tags": "api nicaragua +505",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe83",
+      "country": "Costa Rica",
+      "code": "+506",
+      "_created": "2020-07-13T12:06:23.908Z",
+      "_changed": "2020-07-13T12:06:23.908Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "costa",
+        "rica",
+        "+506"
+      ],
+      "_tags": "api costa rica +506",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe84",
+      "country": "Panama",
+      "code": "+507",
+      "_created": "2020-07-13T12:06:23.941Z",
+      "_changed": "2020-07-13T12:06:23.941Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "panama",
+        "+507"
+      ],
+      "_tags": "api panama +507",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe85",
+      "country": "St. Pierre &(et) Miquelon (France)",
+      "code": "+508",
+      "_created": "2020-07-13T12:06:23.964Z",
+      "_changed": "2020-07-13T12:06:23.964Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "st",
+        "pierre",
+        "&(et)",
+        "miquelon",
+        "(france)",
+        "+508"
+      ],
+      "_tags": "api st pierre &(et) miquelon (france) +508",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe86",
+      "country": "Haiti",
+      "code": "+509",
+      "_created": "2020-07-13T12:06:23.978Z",
+      "_changed": "2020-07-13T12:06:23.978Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "haiti",
+        "+509"
+      ],
+      "_tags": "api haiti +509",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e3fb1b8a9000000fe87",
+      "country": "Peru",
+      "code": "+51",
+      "_created": "2020-07-13T12:06:23.992Z",
+      "_changed": "2020-07-13T12:06:23.992Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "peru",
+        "+51"
+      ],
+      "_tags": "api peru +51",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe88",
+      "country": "Mexico",
+      "code": "+52",
+      "_created": "2020-07-13T12:06:24.009Z",
+      "_changed": "2020-07-13T12:06:24.009Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mexico",
+        "+52"
+      ],
+      "_tags": "api mexico +52",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe89",
+      "country": "Cuba",
+      "code": "+53",
+      "_created": "2020-07-13T12:06:24.032Z",
+      "_changed": "2020-07-13T12:06:24.032Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cuba",
+        "+53"
+      ],
+      "_tags": "api cuba +53",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8a",
+      "country": "Guantanamo Bay",
+      "code": "+53",
+      "_created": "2020-07-13T12:06:24.054Z",
+      "_changed": "2020-07-13T12:06:24.054Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guantanamo",
+        "bay",
+        "+53"
+      ],
+      "_tags": "api guantanamo bay +53",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8b",
+      "country": "Argentina",
+      "code": "+54",
+      "_created": "2020-07-13T12:06:24.069Z",
+      "_changed": "2020-07-13T12:06:24.069Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "argentina",
+        "+54"
+      ],
+      "_tags": "api argentina +54",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8c",
+      "country": "Brazil",
+      "code": "+55",
+      "_created": "2020-07-13T12:06:24.104Z",
+      "_changed": "2020-07-13T12:06:24.104Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "brazil",
+        "+55"
+      ],
+      "_tags": "api brazil +55",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8d",
+      "country": "Chile",
+      "code": "+56",
+      "_created": "2020-07-13T12:06:24.122Z",
+      "_changed": "2020-07-13T12:06:24.122Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "chile",
+        "+56"
+      ],
+      "_tags": "api chile +56",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8e",
+      "country": "Colombia",
+      "code": "+57",
+      "_created": "2020-07-13T12:06:24.133Z",
+      "_changed": "2020-07-13T12:06:24.133Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "colombia",
+        "+57"
+      ],
+      "_tags": "api colombia +57",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe8f",
+      "country": "Venezuela",
+      "code": "+58",
+      "_created": "2020-07-13T12:06:24.153Z",
+      "_changed": "2020-07-13T12:06:24.153Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "venezuela",
+        "+58"
+      ],
+      "_tags": "api venezuela +58",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe90",
+      "country": "French Antilles",
+      "code": "+590",
+      "_created": "2020-07-13T12:06:24.165Z",
+      "_changed": "2020-07-13T12:06:24.165Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "french",
+        "antilles",
+        "+590"
+      ],
+      "_tags": "api french antilles +590",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe91",
+      "country": "Bolivia",
+      "code": "+591",
+      "_created": "2020-07-13T12:06:24.174Z",
+      "_changed": "2020-07-13T12:06:24.174Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bolivia",
+        "+591"
+      ],
+      "_tags": "api bolivia +591",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe92",
+      "country": "Guyana",
+      "code": "+592",
+      "_created": "2020-07-13T12:06:24.186Z",
+      "_changed": "2020-07-13T12:06:24.186Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guyana",
+        "+592"
+      ],
+      "_tags": "api guyana +592",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe93",
+      "country": "Ecuador",
+      "code": "+593",
+      "_created": "2020-07-13T12:06:24.194Z",
+      "_changed": "2020-07-13T12:06:24.194Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "ecuador",
+        "+593"
+      ],
+      "_tags": "api ecuador +593",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe94",
+      "country": "French Guiana",
+      "code": "+594",
+      "_created": "2020-07-13T12:06:24.204Z",
+      "_changed": "2020-07-13T12:06:24.204Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "french",
+        "guiana",
+        "+594"
+      ],
+      "_tags": "api french guiana +594",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe95",
+      "country": "Paraguay",
+      "code": "+595",
+      "_created": "2020-07-13T12:06:24.215Z",
+      "_changed": "2020-07-13T12:06:24.215Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "paraguay",
+        "+595"
+      ],
+      "_tags": "api paraguay +595",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe96",
+      "country": "Martinique (French Antilles)",
+      "code": "+596",
+      "_created": "2020-07-13T12:06:24.284Z",
+      "_changed": "2020-07-13T12:06:24.284Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "martinique",
+        "(french",
+        "antilles)",
+        "+596"
+      ],
+      "_tags": "api martinique (french antilles) +596",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe97",
+      "country": "Suriname",
+      "code": "+597",
+      "_created": "2020-07-13T12:06:24.316Z",
+      "_changed": "2020-07-13T12:06:24.316Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "suriname",
+        "+597"
+      ],
+      "_tags": "api suriname +597",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe98",
+      "country": "Uruguay (East Republic)",
+      "code": "+598",
+      "_created": "2020-07-13T12:06:24.336Z",
+      "_changed": "2020-07-13T12:06:24.336Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "uruguay",
+        "(east",
+        "republic)",
+        "+598"
+      ],
+      "_tags": "api uruguay (east republic) +598",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe99",
+      "country": "Netherlands Antilles",
+      "code": "+599",
+      "_created": "2020-07-13T12:06:24.342Z",
+      "_changed": "2020-07-13T12:06:24.342Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "netherlands",
+        "antilles",
+        "+599"
+      ],
+      "_tags": "api netherlands antilles +599",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9a",
+      "country": "Malaysia",
+      "code": "+60",
+      "_created": "2020-07-13T12:06:24.348Z",
+      "_changed": "2020-07-13T12:06:24.348Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "malaysia",
+        "+60"
+      ],
+      "_tags": "api malaysia +60",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9b",
+      "country": "Australia",
+      "code": "+61",
+      "_created": "2020-07-13T12:06:24.355Z",
+      "_changed": "2020-07-13T12:06:24.355Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "australia",
+        "+61"
+      ],
+      "_tags": "api australia +61",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9c",
+      "country": "Indonesia",
+      "code": "+62",
+      "_created": "2020-07-13T12:06:24.362Z",
+      "_changed": "2020-07-13T12:06:24.362Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "indonesia",
+        "+62"
+      ],
+      "_tags": "api indonesia +62",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9d",
+      "country": "Philippines",
+      "code": "+63",
+      "_created": "2020-07-13T12:06:24.368Z",
+      "_changed": "2020-07-13T12:06:24.368Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "philippines",
+        "+63"
+      ],
+      "_tags": "api philippines +63",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9e",
+      "country": "New Zealand",
+      "code": "+64",
+      "_created": "2020-07-13T12:06:24.374Z",
+      "_changed": "2020-07-13T12:06:24.374Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "new",
+        "zealand",
+        "+64"
+      ],
+      "_tags": "api new zealand +64",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fe9f",
+      "country": "Singapore",
+      "code": "+65",
+      "_created": "2020-07-13T12:06:24.380Z",
+      "_changed": "2020-07-13T12:06:24.380Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "singapore",
+        "+65"
+      ],
+      "_tags": "api singapore +65",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea0",
+      "country": "Thailand",
+      "code": "+66",
+      "_created": "2020-07-13T12:06:24.387Z",
+      "_changed": "2020-07-13T12:06:24.387Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "thailand",
+        "+66"
+      ],
+      "_tags": "api thailand +66",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea1",
+      "country": "North Mariana Islands (Saipan)",
+      "code": "+670",
+      "_created": "2020-07-13T12:06:24.393Z",
+      "_changed": "2020-07-13T12:06:24.393Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "north",
+        "mariana",
+        "islands",
+        "(saipan)",
+        "+670"
+      ],
+      "_tags": "api north mariana islands (saipan) +670",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea2",
+      "country": "Guam",
+      "code": "+671",
+      "_created": "2020-07-13T12:06:24.399Z",
+      "_changed": "2020-07-13T12:06:24.399Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "guam",
+        "+671"
+      ],
+      "_tags": "api guam +671",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea3",
+      "country": "Antarctica",
+      "code": "+672",
+      "_created": "2020-07-13T12:06:24.407Z",
+      "_changed": "2020-07-13T12:06:24.407Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "antarctica",
+        "+672"
+      ],
+      "_tags": "api antarctica +672",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea4",
+      "country": "Australian External Territories",
+      "code": "+672",
+      "_created": "2020-07-13T12:06:24.412Z",
+      "_changed": "2020-07-13T12:06:24.412Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "australian",
+        "external",
+        "territories",
+        "+672"
+      ],
+      "_tags": "api australian external territories +672",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea5",
+      "country": "Brunei Darussalm",
+      "code": "+673",
+      "_created": "2020-07-13T12:06:24.418Z",
+      "_changed": "2020-07-13T12:06:24.418Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "brunei",
+        "darussalm",
+        "+673"
+      ],
+      "_tags": "api brunei darussalm +673",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea6",
+      "country": "Nauru",
+      "code": "+674",
+      "_created": "2020-07-13T12:06:24.424Z",
+      "_changed": "2020-07-13T12:06:24.424Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "nauru",
+        "+674"
+      ],
+      "_tags": "api nauru +674",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea7",
+      "country": "Papua New Guinea",
+      "code": "+675",
+      "_created": "2020-07-13T12:06:24.429Z",
+      "_changed": "2020-07-13T12:06:24.429Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "papua",
+        "new",
+        "guinea",
+        "+675"
+      ],
+      "_tags": "api papua new guinea +675",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea8",
+      "country": "Tonga",
+      "code": "+676",
+      "_created": "2020-07-13T12:06:24.435Z",
+      "_changed": "2020-07-13T12:06:24.435Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tonga",
+        "+676"
+      ],
+      "_tags": "api tonga +676",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fea9",
+      "country": "Solomon Islands",
+      "code": "+677",
+      "_created": "2020-07-13T12:06:24.440Z",
+      "_changed": "2020-07-13T12:06:24.440Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "solomon",
+        "islands",
+        "+677"
+      ],
+      "_tags": "api solomon islands +677",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feaa",
+      "country": "Vanuatu (New Hebrides)",
+      "code": "+678",
+      "_created": "2020-07-13T12:06:24.446Z",
+      "_changed": "2020-07-13T12:06:24.446Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "vanuatu",
+        "(new",
+        "hebrides)",
+        "+678"
+      ],
+      "_tags": "api vanuatu (new hebrides) +678",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feab",
+      "country": "Fiji",
+      "code": "+679",
+      "_created": "2020-07-13T12:06:24.451Z",
+      "_changed": "2020-07-13T12:06:24.451Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "fiji",
+        "+679"
+      ],
+      "_tags": "api fiji +679",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feac",
+      "country": "Palau",
+      "code": "+680",
+      "_created": "2020-07-13T12:06:24.457Z",
+      "_changed": "2020-07-13T12:06:24.457Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "palau",
+        "+680"
+      ],
+      "_tags": "api palau +680",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fead",
+      "country": "Wallis and Futuna",
+      "code": "+681",
+      "_created": "2020-07-13T12:06:24.463Z",
+      "_changed": "2020-07-13T12:06:24.463Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "wallis",
+        "and",
+        "futuna",
+        "+681"
+      ],
+      "_tags": "api wallis and futuna +681",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feae",
+      "country": "Cook Islands",
+      "code": "+682",
+      "_created": "2020-07-13T12:06:24.469Z",
+      "_changed": "2020-07-13T12:06:24.469Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cook",
+        "islands",
+        "+682"
+      ],
+      "_tags": "api cook islands +682",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feaf",
+      "country": "Niue",
+      "code": "+683",
+      "_created": "2020-07-13T12:06:24.474Z",
+      "_changed": "2020-07-13T12:06:24.474Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "niue",
+        "+683"
+      ],
+      "_tags": "api niue +683",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb0",
+      "country": "American Samoa",
+      "code": "+684",
+      "_created": "2020-07-13T12:06:24.480Z",
+      "_changed": "2020-07-13T12:06:24.480Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "american",
+        "samoa",
+        "+684"
+      ],
+      "_tags": "api american samoa +684",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb1",
+      "country": "Western Samoa",
+      "code": "+685",
+      "_created": "2020-07-13T12:06:24.486Z",
+      "_changed": "2020-07-13T12:06:24.486Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "western",
+        "samoa",
+        "+685"
+      ],
+      "_tags": "api western samoa +685",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb2",
+      "country": "Kiribati Republic (Gilbert Islands)",
+      "code": "+686",
+      "_created": "2020-07-13T12:06:24.491Z",
+      "_changed": "2020-07-13T12:06:24.491Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "kiribati",
+        "republic",
+        "(gilbert",
+        "islands)",
+        "+686"
+      ],
+      "_tags": "api kiribati republic (gilbert islands) +686",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb3",
+      "country": "New Caledonia",
+      "code": "+687",
+      "_created": "2020-07-13T12:06:24.497Z",
+      "_changed": "2020-07-13T12:06:24.497Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "new",
+        "caledonia",
+        "+687"
+      ],
+      "_tags": "api new caledonia +687",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb4",
+      "country": "Tuvalu (Ellice Islands)",
+      "code": "+688",
+      "_created": "2020-07-13T12:06:24.503Z",
+      "_changed": "2020-07-13T12:06:24.503Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tuvalu",
+        "(ellice",
+        "islands)",
+        "+688"
+      ],
+      "_tags": "api tuvalu (ellice islands) +688",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb5",
+      "country": "Tahiti (French Polynesia)",
+      "code": "+689",
+      "_created": "2020-07-13T12:06:24.512Z",
+      "_changed": "2020-07-13T12:06:24.512Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tahiti",
+        "(french",
+        "polynesia)",
+        "+689"
+      ],
+      "_tags": "api tahiti (french polynesia) +689",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb6",
+      "country": "Tokelau",
+      "code": "+690",
+      "_created": "2020-07-13T12:06:24.518Z",
+      "_changed": "2020-07-13T12:06:24.518Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tokelau",
+        "+690"
+      ],
+      "_tags": "api tokelau +690",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb7",
+      "country": "Micronesia (F.S. of Polynesia)",
+      "code": "+691",
+      "_created": "2020-07-13T12:06:24.524Z",
+      "_changed": "2020-07-13T12:06:24.524Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "micronesia",
+        "(f",
+        "of",
+        "polynesia)",
+        "+691"
+      ],
+      "_tags": "api micronesia (f of polynesia) +691",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb8",
+      "country": "Marshall Islands",
+      "code": "+692",
+      "_created": "2020-07-13T12:06:24.531Z",
+      "_changed": "2020-07-13T12:06:24.531Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "marshall",
+        "islands",
+        "+692"
+      ],
+      "_tags": "api marshall islands +692",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feb9",
+      "country": "CIS",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.537Z",
+      "_changed": "2020-07-13T12:06:24.537Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "cis",
+        "+7"
+      ],
+      "_tags": "api cis +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feba",
+      "country": "Kazakhstan",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.543Z",
+      "_changed": "2020-07-13T12:06:24.543Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "kazakhstan",
+        "+7"
+      ],
+      "_tags": "api kazakhstan +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000febb",
+      "country": "Kyrgystan",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.549Z",
+      "_changed": "2020-07-13T12:06:24.549Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "kyrgystan",
+        "+7"
+      ],
+      "_tags": "api kyrgystan +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000febc",
+      "country": "Russia",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.555Z",
+      "_changed": "2020-07-13T12:06:24.555Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "russia",
+        "+7"
+      ],
+      "_tags": "api russia +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000febd",
+      "country": "Tajikistan",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.561Z",
+      "_changed": "2020-07-13T12:06:24.561Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "tajikistan",
+        "+7"
+      ],
+      "_tags": "api tajikistan +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000febe",
+      "country": "Uzbekistan",
+      "code": "+7",
+      "_created": "2020-07-13T12:06:24.566Z",
+      "_changed": "2020-07-13T12:06:24.566Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "uzbekistan",
+        "+7"
+      ],
+      "_tags": "api uzbekistan +7",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000febf",
+      "country": "Midway Islands",
+      "code": "+808",
+      "_created": "2020-07-13T12:06:24.574Z",
+      "_changed": "2020-07-13T12:06:24.574Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "midway",
+        "islands",
+        "+808"
+      ],
+      "_tags": "api midway islands +808",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec0",
+      "country": "Anguilla",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.581Z",
+      "_changed": "2020-07-13T12:06:24.581Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "anguilla",
+        "+809"
+      ],
+      "_tags": "api anguilla +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec1",
+      "country": "Antigua",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.587Z",
+      "_changed": "2020-07-13T12:06:24.587Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "antigua",
+        "+809"
+      ],
+      "_tags": "api antigua +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec2",
+      "country": "Barbuda",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.595Z",
+      "_changed": "2020-07-13T12:06:24.595Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "barbuda",
+        "+809"
+      ],
+      "_tags": "api barbuda +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec3",
+      "country": "Bahamas",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.601Z",
+      "_changed": "2020-07-13T12:06:24.601Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bahamas",
+        "+809"
+      ],
+      "_tags": "api bahamas +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec4",
+      "country": "Barbados",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.607Z",
+      "_changed": "2020-07-13T12:06:24.607Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "barbados",
+        "+809"
+      ],
+      "_tags": "api barbados +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec5",
+      "country": "Bermuda",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.615Z",
+      "_changed": "2020-07-13T12:06:24.615Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bermuda",
+        "+809"
+      ],
+      "_tags": "api bermuda +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec6",
+      "country": "British Virgin Islands",
+      "code": "+809",
+      "_created": "2020-07-13T12:06:24.632Z",
+      "_changed": "2020-07-13T12:06:24.632Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "british",
+        "virgin",
+        "islands",
+        "+809"
+      ],
+      "_tags": "api british virgin islands +809",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec7",
+      "country": "Japan",
+      "code": "+81",
+      "_created": "2020-07-13T12:06:24.640Z",
+      "_changed": "2020-07-13T12:06:24.640Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "japan",
+        "+81"
+      ],
+      "_tags": "api japan +81",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec8",
+      "country": "South Korea",
+      "code": "+82",
+      "_created": "2020-07-13T12:06:24.647Z",
+      "_changed": "2020-07-13T12:06:24.647Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "south",
+        "korea",
+        "+82"
+      ],
+      "_tags": "api south korea +82",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fec9",
+      "country": "Viet Nam",
+      "code": "+84",
+      "_created": "2020-07-13T12:06:24.654Z",
+      "_changed": "2020-07-13T12:06:24.654Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "viet",
+        "nam",
+        "+84"
+      ],
+      "_tags": "api viet nam +84",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feca",
+      "country": "North Korea",
+      "code": "+850",
+      "_created": "2020-07-13T12:06:24.664Z",
+      "_changed": "2020-07-13T12:06:24.664Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "north",
+        "korea",
+        "+850"
+      ],
+      "_tags": "api north korea +850",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fecb",
+      "country": "Hong Kong",
+      "code": "+852",
+      "_created": "2020-07-13T12:06:24.672Z",
+      "_changed": "2020-07-13T12:06:24.672Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "hong",
+        "kong",
+        "+852"
+      ],
+      "_tags": "api hong kong +852",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fecc",
+      "country": "Macao",
+      "code": "+853",
+      "_created": "2020-07-13T12:06:24.679Z",
+      "_changed": "2020-07-13T12:06:24.679Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "macao",
+        "+853"
+      ],
+      "_tags": "api macao +853",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fecd",
+      "country": "Khmer Republic (Cambodia/Kampuchea)",
+      "code": "+855",
+      "_created": "2020-07-13T12:06:24.686Z",
+      "_changed": "2020-07-13T12:06:24.686Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "khmer",
+        "republic",
+        "(cambodia/kampuchea)",
+        "+855"
+      ],
+      "_tags": "api khmer republic (cambodia/kampuchea) +855",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fece",
+      "country": "Laos",
+      "code": "+856",
+      "_created": "2020-07-13T12:06:24.692Z",
+      "_changed": "2020-07-13T12:06:24.692Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "laos",
+        "+856"
+      ],
+      "_tags": "api laos +856",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fecf",
+      "country": "China (People's Republic)",
+      "code": "+86",
+      "_created": "2020-07-13T12:06:24.701Z",
+      "_changed": "2020-07-13T12:06:24.701Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "china",
+        "(people's",
+        "republic)",
+        "+86"
+      ],
+      "_tags": "api china (people's republic) +86",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed0",
+      "country": "Marisat--Atlantic Ocean code for ships (Caribbean & Mediterranean too)",
+      "code": "+871",
+      "_created": "2020-07-13T12:06:24.710Z",
+      "_changed": "2020-07-13T12:06:24.710Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "marisat--atlantic",
+        "ocean",
+        "code",
+        "for",
+        "ships",
+        "(caribbean",
+        "mediterranean",
+        "too)",
+        "+871"
+      ],
+      "_tags": "api marisat--atlantic ocean code for ships (caribbean mediterranean too) +871",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed1",
+      "country": "Marisat--Pacific Ocean code for ships",
+      "code": "+872",
+      "_created": "2020-07-13T12:06:24.719Z",
+      "_changed": "2020-07-13T12:06:24.719Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "marisat--pacific",
+        "ocean",
+        "code",
+        "for",
+        "ships",
+        "+872"
+      ],
+      "_tags": "api marisat--pacific ocean code for ships +872",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed2",
+      "country": "Marisat--Indian Ocean code for ships",
+      "code": "+873",
+      "_created": "2020-07-13T12:06:24.726Z",
+      "_changed": "2020-07-13T12:06:24.726Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "marisat--indian",
+        "ocean",
+        "code",
+        "for",
+        "ships",
+        "+873"
+      ],
+      "_tags": "api marisat--indian ocean code for ships +873",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed3",
+      "country": "Atlantic West--most of this satellite's footprint overlaps 871",
+      "code": "+874",
+      "_created": "2020-07-13T12:06:24.733Z",
+      "_changed": "2020-07-13T12:06:24.733Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "atlantic",
+        "west--most",
+        "of",
+        "this",
+        "satellite's",
+        "footprint",
+        "overlaps",
+        "871",
+        "+874"
+      ],
+      "_tags": "api atlantic west--most of this satellite's footprint overlaps 871 +874",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed4",
+      "country": "Bangladesh",
+      "code": "+880",
+      "_created": "2020-07-13T12:06:24.739Z",
+      "_changed": "2020-07-13T12:06:24.739Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bangladesh",
+        "+880"
+      ],
+      "_tags": "api bangladesh +880",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed5",
+      "country": "China-Taiwan",
+      "code": "+886",
+      "_created": "2020-07-13T12:06:24.746Z",
+      "_changed": "2020-07-13T12:06:24.746Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "china-taiwan",
+        "+886"
+      ],
+      "_tags": "api china-taiwan +886",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed6",
+      "country": "Turkey",
+      "code": "+90",
+      "_created": "2020-07-13T12:06:24.753Z",
+      "_changed": "2020-07-13T12:06:24.753Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "turkey",
+        "+90"
+      ],
+      "_tags": "api turkey +90",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed7",
+      "country": "India",
+      "code": "+91",
+      "_created": "2020-07-13T12:06:24.759Z",
+      "_changed": "2020-07-13T12:06:24.759Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "india",
+        "+91"
+      ],
+      "_tags": "api india +91",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed8",
+      "country": "Belem",
+      "code": "+91",
+      "_created": "2020-07-13T12:06:24.768Z",
+      "_changed": "2020-07-13T12:06:24.768Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "belem",
+        "+91"
+      ],
+      "_tags": "api belem +91",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fed9",
+      "country": "Pakistan",
+      "code": "+92",
+      "_created": "2020-07-13T12:06:24.774Z",
+      "_changed": "2020-07-13T12:06:24.774Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "pakistan",
+        "+92"
+      ],
+      "_tags": "api pakistan +92",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feda",
+      "country": "Afghanistan",
+      "code": "+93",
+      "_created": "2020-07-13T12:06:24.783Z",
+      "_changed": "2020-07-13T12:06:24.783Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "afghanistan",
+        "+93"
+      ],
+      "_tags": "api afghanistan +93",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fedb",
+      "country": "Sri Lanka",
+      "code": "+94",
+      "_created": "2020-07-13T12:06:24.793Z",
+      "_changed": "2020-07-13T12:06:24.793Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "sri",
+        "lanka",
+        "+94"
+      ],
+      "_tags": "api sri lanka +94",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fedc",
+      "country": "Myanmar (previously known as Burma)",
+      "code": "+95",
+      "_created": "2020-07-13T12:06:24.799Z",
+      "_changed": "2020-07-13T12:06:24.799Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "myanmar",
+        "(previously",
+        "known",
+        "as",
+        "burma)",
+        "+95"
+      ],
+      "_tags": "api myanmar (previously known as burma) +95",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fedd",
+      "country": " Maldives",
+      "code": "+960",
+      "_created": "2020-07-13T12:06:24.810Z",
+      "_changed": "2020-07-13T12:06:24.810Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "maldives",
+        "+960"
+      ],
+      "_tags": "api maldives +960",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fede",
+      "country": "Lebanon",
+      "code": "+961",
+      "_created": "2020-07-13T12:06:24.817Z",
+      "_changed": "2020-07-13T12:06:24.817Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "lebanon",
+        "+961"
+      ],
+      "_tags": "api lebanon +961",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fedf",
+      "country": "Jordan",
+      "code": "+962",
+      "_created": "2020-07-13T12:06:24.823Z",
+      "_changed": "2020-07-13T12:06:24.823Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "jordan",
+        "+962"
+      ],
+      "_tags": "api jordan +962",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee0",
+      "country": "Syrian Arab Republic (Syria)",
+      "code": "+963",
+      "_created": "2020-07-13T12:06:24.832Z",
+      "_changed": "2020-07-13T12:06:24.832Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "syrian",
+        "arab",
+        "republic",
+        "(syria)",
+        "+963"
+      ],
+      "_tags": "api syrian arab republic (syria) +963",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee1",
+      "country": "Iraq",
+      "code": "+964",
+      "_created": "2020-07-13T12:06:24.841Z",
+      "_changed": "2020-07-13T12:06:24.841Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "iraq",
+        "+964"
+      ],
+      "_tags": "api iraq +964",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee2",
+      "country": "Kuwait",
+      "code": "+965",
+      "_created": "2020-07-13T12:06:24.850Z",
+      "_changed": "2020-07-13T12:06:24.850Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "kuwait",
+        "+965"
+      ],
+      "_tags": "api kuwait +965",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee3",
+      "country": "Saudi Arabia",
+      "code": "+966",
+      "_created": "2020-07-13T12:06:24.857Z",
+      "_changed": "2020-07-13T12:06:24.857Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "saudi",
+        "arabia",
+        "+966"
+      ],
+      "_tags": "api saudi arabia +966",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee4",
+      "country": "Yemen Arab Republic (North Yemen)",
+      "code": "+967",
+      "_created": "2020-07-13T12:06:24.864Z",
+      "_changed": "2020-07-13T12:06:24.864Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "yemen",
+        "arab",
+        "republic",
+        "(north",
+        "yemen)",
+        "+967"
+      ],
+      "_tags": "api yemen arab republic (north yemen) +967",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee5",
+      "code": "+968",
+      "country ": "Oman",
+      "_created": "2020-07-13T12:06:24.873Z",
+      "_changed": "2020-07-13T12:06:24.873Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "+968",
+        "oman"
+      ],
+      "_tags": "api +968 oman",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee6",
+      "country": "Yemen (People's Democratic Republic of) (Aden)",
+      "code": "+969",
+      "_created": "2020-07-13T12:06:24.881Z",
+      "_changed": "2020-07-13T12:06:24.881Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "yemen",
+        "(people's",
+        "democratic",
+        "republic",
+        "of)",
+        "(aden)",
+        "+969"
+      ],
+      "_tags": "api yemen (people's democratic republic of) (aden) +969",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee7",
+      "country": "United Arab Emirates",
+      "code": "+971",
+      "_created": "2020-07-13T12:06:24.888Z",
+      "_changed": "2020-07-13T12:06:24.888Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "united",
+        "arab",
+        "emirates",
+        "+971"
+      ],
+      "_tags": "api united arab emirates +971",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee8",
+      "country": "Israel",
+      "code": "+972",
+      "_created": "2020-07-13T12:06:24.898Z",
+      "_changed": "2020-07-13T12:06:24.898Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "israel",
+        "+972"
+      ],
+      "_tags": "api israel +972",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000fee9",
+      "country": "Bahrain",
+      "code": "+973",
+      "_created": "2020-07-13T12:06:24.924Z",
+      "_changed": "2020-07-13T12:06:24.924Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bahrain",
+        "+973"
+      ],
+      "_tags": "api bahrain +973",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feea",
+      "country": "Qatar",
+      "code": "+974",
+      "_created": "2020-07-13T12:06:24.943Z",
+      "_changed": "2020-07-13T12:06:24.943Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "qatar",
+        "+974"
+      ],
+      "_tags": "api qatar +974",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feeb",
+      "country": "Bhutan",
+      "code": "+975",
+      "_created": "2020-07-13T12:06:24.958Z",
+      "_changed": "2020-07-13T12:06:24.958Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "bhutan",
+        "+975"
+      ],
+      "_tags": "api bhutan +975",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feec",
+      "country": "Mongolia",
+      "code": "+976",
+      "_created": "2020-07-13T12:06:24.965Z",
+      "_changed": "2020-07-13T12:06:24.965Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "mongolia",
+        "+976"
+      ],
+      "_tags": "api mongolia +976",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feed",
+      "country": "Nepal",
+      "code": "+977",
+      "_created": "2020-07-13T12:06:24.979Z",
+      "_changed": "2020-07-13T12:06:24.979Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "nepal",
+        "+977"
+      ],
+      "_tags": "api nepal +977",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e40b1b8a9000000feee",
+      "country": "Iran",
+      "code": "+98",
+      "_created": "2020-07-13T12:06:24.989Z",
+      "_changed": "2020-07-13T12:06:24.989Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "iran",
+        "+98"
+      ],
+      "_tags": "api iran +98",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e41b1b8a9000000feef",
+      "country": "Turkmenistan",
+      "code": "+993",
+      "_created": "2020-07-13T12:06:25.010Z",
+      "_changed": "2020-07-13T12:06:25.010Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "turkmenistan",
+        "+993"
+      ],
+      "_tags": "api turkmenistan +993",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e41b1b8a9000000fef0",
+      "country": "Azerbaijan",
+      "code": "+994",
+      "_created": "2020-07-13T12:06:25.020Z",
+      "_changed": "2020-07-13T12:06:25.020Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "azerbaijan",
+        "+994"
+      ],
+      "_tags": "api azerbaijan +994",
+      "_version": 0
+    },
+    {
+      "_id": "5f0c4e41b1b8a9000000fef1",
+      "country": "Georgia",
+      "code": "+995",
+      "_created": "2020-07-13T12:06:25.038Z",
+      "_changed": "2020-07-13T12:06:25.038Z",
+      "_createdby": "api",
+      "_changedby": "api",
+      "_keywords": [
+        "api",
+        "georgia",
+        "+995"
+      ],
+      "_tags": "api georgia +995",
+      "_version": 0
+    }
+  ]
+}

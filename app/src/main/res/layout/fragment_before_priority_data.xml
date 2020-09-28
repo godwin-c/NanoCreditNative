@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.forLoans.BeforePriorityDataFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/before_priority_data_proceed_to_show_loan_app_info"
+        android:visibility="visible"
+        android:background="@mipmap/white_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/before_priority_data_proceed_to_show_loan_app_info_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Agada Godwin C"/>
+
+        <TextView
+            android:id="@+id/before_priority_data_proceed_to_show_loan_app_info_loan_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Loan Application ID: 11223"/>
+
+        <com.gusakov.library.PulseCountDown
+            android:id="@+id/pulseCountDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textColor="@color/colorAccent"
+            android:text="5"
+            android:textSize="100sp"
+            app:pc_startValue="5" />
+
+        <TextView
+            android:id="@+id/before_priority_data_txt_permission"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/your_application_has_been_received_and_will_be_proceessed"/>
+
+        <LinearLayout
+            android:id="@+id/before_priority_data_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/before_priority_data_proceed_to_show_loan_app_info_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_cancel"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/before_priority_data_proceed_to_show_loan_app_info_continue_to_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_purple"
+                android:text="Yes"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

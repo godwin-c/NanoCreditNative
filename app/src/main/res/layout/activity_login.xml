@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/green_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <ImageView
+        android:id="@+id/app_logo_imv"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/app_name_display"
+        android:textSize = "20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to Nano Credit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/white_border"
+        android:textColorHint="#cccccc"
+        app:endIconDrawable="@android:drawable/sym_action_email">
+
+        <EditText
+            android:id="@+id/login_user_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/username_icon"
+            android:hint="   Email"
+            android:padding="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@null"
+            android:textColor="#cccccc"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    app:endIconMode="password_toggle"-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_border"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:id="@+id/login_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/password_icon"
+            android:hint="   Passwoard"
+            android:inputType="textPassword"
+            android:textColor="#cccccc"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/grey"
+            android:layout_margin="5dp"
+            android:text="SIGN IN"
+            android:background="@drawable/button_bg"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Register"
+            android:background="@drawable/button_bg_purple"/>
+
+        <Button
+            android:id="@+id/forgot_pin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="forgot Pin?"
+            android:background="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

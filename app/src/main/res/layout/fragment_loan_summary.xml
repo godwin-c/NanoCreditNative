@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/white_bg"
+    tools:context=".fragments.LoanSummaryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/loan_summary_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Agada Godwin C"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/loan_summary_customer_id"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Customer ID: 11223"/>-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/loan_summary_loan_id"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Loan ID: 11223"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="Principal amount  : " />
+
+            <TextView
+                android:id="@+id/loan_summary_loan_principal_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="11223"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="Outstanding amount  : " />
+
+            <TextView
+                android:id="@+id/loan_summary_loan_outstanding_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="11223"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="Loan Status  : " />
+
+            <TextView
+                android:id="@+id/loan_summary_loan_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Draft"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/loan_summary_loan_principal_amount"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Principal amount : 11223"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/loan_summary_loan_outstanding_amount"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Outstanding amount : 11223"-->
+<!--            android:textStyle="bold" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/loan_summary_loan_principal_amount"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Principal amount : 11223" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/loan_summary_loan_outstanding_amount"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="Outstanding amount : 11223" />-->
+
+        <!--        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/loan_summary_loan_date_section"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Dates"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="Start Date  : " />
+
+            <TextView
+                android:id="@+id/loan_summary_start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Dec 21st, 2019"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/loan_summary_start_date"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Start Date : Dec 21st, 2019"-->
+<!--            android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="End Date :" />
+
+            <TextView
+                android:id="@+id/loan_summary_loan_end_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Feb 21st 2020"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/loan_summary_loan_end_date"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="End Date : Feb 21st 2020"-->
+<!--            android:textStyle="bold" />-->
+
+<!--                <com.ramijemli.percentagechartview.PercentageChartView-->
+<!--                    android:id="@+id/view_id"-->
+<!--                    android:layout_width="160dp"-->
+<!--                    android:layout_height="160dp"-->
+<!--                    app:pcv_mode="pie"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    app:pcv_orientation="counter_clockwise"-->
+<!--                    app:pcv_animDuration="800"-->
+<!--                    app:pcv_animInterpolator="anticipate_overshoot"-->
+<!--                    app:pcv_progress="10"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:pcv_startAngle="90"/>-->
+
+        <az.plainpie.PieView
+            android:id="@+id/pieView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            plainpie:inner_pie_padding="30"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            plainpie:percentage="40"
+            plainpie:percentage_size="70"
+            plainpie:inner_text_visibility="true"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

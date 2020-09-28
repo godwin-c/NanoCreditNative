@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home_fragment"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_account_fragment"
+            android:icon="@drawable/my_account_icon"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_cus_service_fragment"
+            android:icon="@drawable/customer_care"
+            android:title="Customer Service" />
+
+        <item
+            android:id="@+id/nav_promotions_fragment"
+            android:icon="@drawable/promotions_icon"
+            android:title="Promotions" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_faq_fragment"
+            android:icon="@drawable/faq_icon"
+            android:title="FAQs" />
+
+        <item
+            android:id="@+id/nav_legal_fragment"
+            android:icon="@drawable/legal_icon"
+            android:title="Legal" />
+
+        <item
+            android:id="@+id/nav_logout_fragment"
+            android:icon="@drawable/logout_icon"
+            android:onClick="logout"
+            android:title="Logout" />
+    </group>
+</menu>

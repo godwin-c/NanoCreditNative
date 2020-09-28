@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/green_grey_bg"
+    tools:context=".fragments.HomeFragment">
+
+    <!--    Entire View-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        Upper part of the view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--            This part will contain the text-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+<!--                The first textView containing Name-->
+                <TextView
+                    android:id="@+id/user_name_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="bottom"
+                    android:text="Welcome Godwin Agada"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/purple_btn_color" />
+
+<!--                The second textview containing date and time-->
+                <TextView
+                    android:id="@+id/last_known_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|top"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="last login: 11:24 am. November 4, 2019"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+            <!--            This part will contain the Viewpager-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/cardview_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingBottom="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        Lower part of the View-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--            This part holds the first 3 buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+<!--                The first of the first 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_apply_loan"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/apply_for_loan" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:padding="0dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Apply for Loan"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color"  />
+                </LinearLayout>
+
+<!--                The second of the first 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_pay_schedule"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/payment_schedule" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:text="Schedule"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color" />
+
+                </LinearLayout>
+
+<!--                The 3rd of the first 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_avail_discounts"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/availlable_discounts" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:text="Discounts"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            This part holds the second 3 buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+<!--                The first of the 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_loan_summary"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/loan_summary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:text="Summary"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color" />
+
+                </LinearLayout>
+
+<!--                The second of the 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_loan_history"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/loan_history" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="History"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color"  />
+                </LinearLayout>
+
+<!--                The third of the 3 buttons-->
+                <LinearLayout
+                    android:id="@+id/home_year_to_date"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_btn_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:padding="2dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/year_to_date" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Year to Date"
+                        android:background="@drawable/button_bg"
+                        android:textColor="@color/purple_btn_color"  />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
