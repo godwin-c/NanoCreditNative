@@ -25,6 +25,7 @@ import com.gusakov.library.PulseCountDown;
 import com.gusakov.library.java.interfaces.OnCountdownCompleted;
 import com.mtechcomm.nanocreditnative.MainActivity;
 import com.mtechcomm.nanocreditnative.R;
+import com.mtechcomm.nanocreditnative.classes.AppUser;
 import com.mtechcomm.nanocreditnative.classes.CustomCallBack;
 import com.mtechcomm.nanocreditnative.fragments.ApplyForLoanFragment;
 import com.mtechcomm.nanocreditnative.models.AuthenticationResponse;
@@ -58,6 +59,9 @@ public class BeforePriorityDataFragment extends Fragment {
     boolean priority_data_sent;
     AuthenticationResponse authenticationResponse;
 
+    AppUser appUser;
+    LoanModelResult loanModelResult;
+
     public BeforePriorityDataFragment() {
         // Required empty public constructor
     }
@@ -88,6 +92,11 @@ public class BeforePriorityDataFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        appUser = retrieveUser();
+        loanModelResult = getCustomerLoanDetails();
+
+        before_priority_data_proceed_to_show_loan_app_info_customer_name.setText(appUser.getOthernames() + " " + appUser.getSurname());
+        before_priority_data_proceed_to_show_loan_app_info_loan_id.setText("Loan Application ID: " + loanModelResult.getApplicationId());
         before_priority_data_proceed_to_show_loan_app_info_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,7 +123,7 @@ public class BeforePriorityDataFragment extends Fragment {
                 if (!priority_data_sent){
                     getToken();
                 }else {
-                    LoanModelResult loanModelResult = getCustomerLoanDetails();
+
                     checkIfScoreReady(loanModelResult.getApplicationId(), authenticationResponse.getToken());
                 }
             }
@@ -157,7 +166,7 @@ public class BeforePriorityDataFragment extends Fragment {
                     Log.d(TAG, "onResponse: " + response.code());
 
                     //sendLoanApplication(authenticationResponse.getToken());
-                    LoanModelResult loanModelResult = getCustomerLoanDetails();
+//                    LoanModelResult loanModelResult = getCustomerLoanDetails();
                     callPriorityData(loanModelResult.getApplicationId(),authenticationResponse.getToken());
 
                 }else {
@@ -199,7 +208,7 @@ public class BeforePriorityDataFragment extends Fragment {
                     // Twelveth Method Call
                     priority_data_sent = true;
 
-                    LoanModelResult loanModelResult = getCustomerLoanDetails();
+//                    loanModelResult = getCustomerLoanDetails();
                     checkIfScoreReady(loanModelResult.getApplicationId(), authenticationResponse.getToken());
 
                 } else {
@@ -277,6 +286,20 @@ public class BeforePriorityDataFragment extends Fragment {
         }));
     }
 
+    private AppUser retrieveUser() {
+
+        SharedPreferences preferences = getContext().getSharedPreferences("current_app_user", Context.MODE_PRIVATE);
+
+        Gson gson = new Gson();
+        String json = preferences.getString("app_user", "");
+        if (json.equals("")) {
+
+            return null;
+        }
+
+        return gson.fromJson(json, AppUser.class);
+    }
+
     private LoanModelResult getCustomerLoanDetails(){
         SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
 
@@ -285,9 +308,8 @@ public class BeforePriorityDataFragment extends Fragment {
         if (json.equals("")){
             return  null;
         }
-        LoanModelResult loanModelResult = gson.fromJson(json, LoanModelResult.class);
 
-        return loanModelResult;
+        return gson.fromJson(json, LoanModelResult.class);
     }
 
     private void saveScoreReadyResult(CheckScoreReadyResult model) {
