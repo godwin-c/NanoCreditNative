@@ -16,6 +16,8 @@ import com.mtechcomm.nanocreditnative.models.LoanModelResult;
 import com.mtechcomm.nanocreditnative.models.LoanOfferModel;
 import com.mtechcomm.nanocreditnative.models.LoanOfferResult;
 import com.mtechcomm.nanocreditnative.models.PriorityDataModelInput;
+import com.mtechcomm.nanocreditnative.models.RepayLoanModel;
+import com.mtechcomm.nanocreditnative.models.RepayLoanResponseModel;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -39,6 +41,9 @@ public interface NLP_API_Interface {
 
     @POST("loan/confirm")
     Call<LoanOfferResult> confirmLoan(@Body ConfirmLoanModel modelInput, @Header("Authorization") String auth);
+
+    @POST("loan/payment")
+    Call<RepayLoanResponseModel> repayLoan(@Body RepayLoanModel repayLoanModel, @Header("Authorization") String auth);
 
     // Customer Section
     @POST("customer")

@@ -19,7 +19,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mtechcomm.nanocreditnative.R;
 import com.mtechcomm.nanocreditnative.classes.AppUser;
-import com.mtechcomm.nanocreditnative.classes.CreateUserDetails;
 import com.mtechcomm.nanocreditnative.classes.CustomCallBack;
 import com.mtechcomm.nanocreditnative.fragments.ApplyForLoanFragment;
 import com.mtechcomm.nanocreditnative.models.AcceptScoringInput;
@@ -113,9 +112,9 @@ public class DialogForPrivacyFragment extends Fragment {
     private void acceptScoring(String token) {
         NLP_API_Interface nlp_api_interface = NLP_Api_Client.getClient().create(NLP_API_Interface.class);
 
-        CreateUserDetails userDetails = getCustomerDetails();
+        //CreateUserDetails userDetails = getCustomerDetails();
 
-        AcceptScoringInput acceptScoringInput = new AcceptScoringInput(userDetails.getScannedID());
+        AcceptScoringInput acceptScoringInput = new AcceptScoringInput(appUser.getDocumentID());
 
         Call<AcceptScoringModel> call = nlp_api_interface.acceptScoring(acceptScoringInput, "Bearer " + token);
 
@@ -215,16 +214,16 @@ public class DialogForPrivacyFragment extends Fragment {
         return gson.fromJson(json, AppUser.class);
     }
 
-    private CreateUserDetails getCustomerDetails(){
-        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
-
-        Gson gson = new Gson();
-        String json = preferences.getString(getString(R.string.created_user_details), "");
-        if (json.equals("")){
-            return  null;
-        }
-        CreateUserDetails createUserDetails = gson.fromJson(json, CreateUserDetails.class);
-
-        return createUserDetails;
-    }
+//    private CreateUserDetails getCustomerDetails(){
+//        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//
+//        Gson gson = new Gson();
+//        String json = preferences.getString(getString(R.string.created_user_details), "");
+//        if (json.equals("")){
+//            return  null;
+//        }
+//        CreateUserDetails createUserDetails = gson.fromJson(json, CreateUserDetails.class);
+//
+//        return createUserDetails;
+//    }
 }

@@ -32,5 +32,5 @@ public interface Mtech_API_Interface {
     Call<UpdateUserDataResult> updateUserData(@Body UpdateUserDataModel updateUserDataModel);
 
     @POST("updateloaninfo")
-    Call<UpdateUserDataResult> updateLoanInfo(@Body UpdateLoanDataModel updateLoanDataModel);
+    Call<UpdateUserDataModel> updateLoanInfo(@Body UpdateLoanDataModel updateLoanDataModel);
 }

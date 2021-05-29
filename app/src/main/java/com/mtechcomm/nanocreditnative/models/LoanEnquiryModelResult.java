@@ -5,46 +5,59 @@ import com.google.gson.annotations.SerializedName;
 public class LoanEnquiryModelResult {
 
     @SerializedName("amount")
-    private String amount;
+    private float amount;
+
     @SerializedName("applicationId")
     private int applicationId;
+
     @SerializedName("creditProduct")
     private int creditProduct;
+
     @SerializedName("customerId")
     private int customerId;
+
     @SerializedName("endDate")
     private String endDate;
+
     @SerializedName("info")
     private String info;
+
+    @SerializedName("mandateId")
+    private String mandateId;
+
     @SerializedName("outstanding")
-    private String outstanding;
+    private float outstanding;
+
     @SerializedName("startDate")
     private String startDate;
+
     @SerializedName("status")
     private String status;
+
     @SerializedName("warning")
     private boolean warning;
 
 
-    public LoanEnquiryModelResult(String amount, int applicationId, int creditProduct, int customerId, String endDate, String info,
-                                  String outstanding, String startDate, String status, boolean warning) {
+    public LoanEnquiryModelResult(float amount, int applicationId, int creditProduct, int customerId, String endDate, String info,
+                                  String mandateId, float outstanding, String startDate, String status, boolean warning) {
         this.amount = amount;
         this.applicationId = applicationId;
         this.creditProduct = creditProduct;
         this.customerId = customerId;
         this.endDate = endDate;
         this.info = info;
+        this.mandateId = mandateId;
         this.outstanding = outstanding;
         this.startDate = startDate;
         this.status = status;
         this.warning = warning;
     }
 
-    public String getAmount() {
+    public float getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(float amount) {
         this.amount = amount;
     }
 
@@ -88,11 +101,19 @@ public class LoanEnquiryModelResult {
         this.info = info;
     }
 
-    public String getOutstanding() {
+    public String getMandateId() {
+        return mandateId;
+    }
+
+    public void setMandateId(String mandateId) {
+        this.mandateId = mandateId;
+    }
+
+    public float getOutstanding() {
         return outstanding;
     }
 
-    public void setOutstanding(String outstanding) {
+    public void setOutstanding(float outstanding) {
         this.outstanding = outstanding;
     }
 

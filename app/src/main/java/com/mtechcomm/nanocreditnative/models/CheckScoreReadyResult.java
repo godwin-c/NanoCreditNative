@@ -19,7 +19,7 @@ public class CheckScoreReadyResult {
     @SerializedName("applicationDate")
     private String applicationDate;
 
-    public CheckScoreReadyResult(int amount, int creditProduct, int customerId, int applicationId, String applicationDate) {
+    public CheckScoreReadyResult(int amount, String applicationDate,int applicationId, int creditProduct, int customerId ) {
         this.amount = amount;
         this.creditProduct = creditProduct;
         this.customerId = customerId;

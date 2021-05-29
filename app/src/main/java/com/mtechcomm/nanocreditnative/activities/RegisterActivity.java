@@ -1,5 +1,6 @@
 package com.mtechcomm.nanocreditnative.activities;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -438,13 +439,22 @@ public class RegisterActivity extends AppCompatActivity {
                                     Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         if (requestCode == MY_REQUEST_CODE) {
-            //String fragmentName = intent.getStringExtra("fragmentName");
-            //onNextFormClicked(fragmentName);
 
-            fragmentClass = RegDetailsFragment.class;
-            setupFragmentToDisplay(fragmentClass);
-            prev_form.setVisibility(View.VISIBLE);
-            next_form.setText("Submit");
+
+                if(resultCode == Activity.RESULT_OK){
+                    fragmentClass = RegDetailsFragment.class;
+                    setupFragmentToDisplay(fragmentClass);
+                    prev_form.setVisibility(View.VISIBLE);
+                    next_form.setText("Submit");
+                }
+                if (resultCode == Activity.RESULT_CANCELED) {
+                    //Write your code if there's no result
+                    DesignerToast.Error(RegisterActivity.this,"Number not verified. Try again later",Gravity.CENTER,Toast.LENGTH_SHORT);
+
+                }
+
+
+
            // textView.setText(intent.getStringExtra(“text”));
 
         }else {

@@ -18,7 +18,7 @@ import androidx.fragment.app.Fragment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mtechcomm.nanocreditnative.R;
-import com.mtechcomm.nanocreditnative.classes.CreateUserDetails;
+import com.mtechcomm.nanocreditnative.classes.AppUser;
 import com.mtechcomm.nanocreditnative.classes.CustomCallBack;
 import com.mtechcomm.nanocreditnative.fragments.ApplyForLoanFragment;
 import com.mtechcomm.nanocreditnative.models.AuthenticationResponse;
@@ -40,6 +40,7 @@ public class RequestForLoanFragment extends Fragment {
 
     private static final String TAG = RequestForLoanFragment.class.getSimpleName();
     Button display_created_user_btn_retry_loan_create;
+    AppUser appUser;
 
     public RequestForLoanFragment() {
         // Required empty public constructor
@@ -57,6 +58,8 @@ public class RequestForLoanFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        appUser = retrieveUser();
 
         getToken();
 
@@ -120,8 +123,8 @@ public class RequestForLoanFragment extends Fragment {
     private void sendLoanApplication(String token) {
         NLP_API_Interface nlp_api_interface = NLP_Api_Client.getClient().create(NLP_API_Interface.class);
 
-        CreateUserDetails userDetails = getCustomerDetails();
-        LoanModel loanModel = new LoanModel(userDetails.getScannedID());
+        //CreateUserDetails userDetails = getCustomerDetails();
+        LoanModel loanModel = new LoanModel(appUser.getDocumentID());
 
         Call<LoanModelResult> call = nlp_api_interface.requestLoan(loanModel, "Bearer " + token);
 
@@ -173,6 +176,10 @@ public class RequestForLoanFragment extends Fragment {
 
     }
 
+    private void saveCustomerLoanDetails(LoanModelResult loanModelResult) {
+
+    }
+
     private void callMainFragment(){
         Fragment parent = getParentFragment();
         if(parent instanceof ApplyForLoanFragment) {
@@ -181,26 +188,50 @@ public class RequestForLoanFragment extends Fragment {
 
     }
 
-    private CreateUserDetails getCustomerDetails(){
-        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+    private AppUser retrieveUser() {
+
+        SharedPreferences preferences = getContext().getSharedPreferences("current_app_user", Context.MODE_PRIVATE);
 
         Gson gson = new Gson();
-        String json = preferences.getString(getString(R.string.created_user_details), "");
-        if (json.equals("")){
-            return  null;
-        }
-        CreateUserDetails createUserDetails = gson.fromJson(json, CreateUserDetails.class);
+        String json = preferences.getString("app_user", "");
+        if (json.equals("")) {
 
-        return createUserDetails;
+            return null;
+        }
+
+        return gson.fromJson(json, AppUser.class);
     }
 
-    private void saveCustomerLoanDetails(LoanModelResult model) {
-        SharedPreferences preferences = getActivity().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+    private void saveUserInfo(AppUser appUser) {
+        SharedPreferences preferences = getActivity().getSharedPreferences("current_app_user", Context.MODE_PRIVATE);
 
         SharedPreferences.Editor prefsEditor = preferences.edit();
         Gson gson = new Gson();
-        String json = gson.toJson(model);
-        prefsEditor.putString(getString(R.string.customer_loan_details_save), json);
+        String json = gson.toJson(appUser);
+        prefsEditor.putString("app_user", json);
         prefsEditor.commit();
     }
+
+//    private CreateUserDetails getCustomerDetails(){
+//        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//
+//        Gson gson = new Gson();
+//        String json = preferences.getString(getString(R.string.created_user_details), "");
+//        if (json.equals("")){
+//            return  null;
+//        }
+//        CreateUserDetails createUserDetails = gson.fromJson(json, CreateUserDetails.class);
+//
+//        return createUserDetails;
+//    }
+
+//    private void saveCustomerLoanDetails(LoanModelResult model) {
+//        SharedPreferences preferences = getActivity().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//
+//        SharedPreferences.Editor prefsEditor = preferences.edit();
+//        Gson gson = new Gson();
+//        String json = gson.toJson(model);
+//        prefsEditor.putString(getString(R.string.customer_loan_details_save), json);
+//        prefsEditor.commit();
+//    }
 }

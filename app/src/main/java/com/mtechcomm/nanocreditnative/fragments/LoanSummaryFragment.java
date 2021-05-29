@@ -81,7 +81,7 @@ public class LoanSummaryFragment extends Fragment {
         loan_summary_loan_end_date.setText(result.getEndDate());
         loan_summary_start_date.setText(result.getStartDate());
 
-        float repaymentPercentage = getPercentage((Integer.valueOf(result.getAmount())),Integer.valueOf(result.getOutstanding()));
+        float repaymentPercentage = getPercentage((result.getAmount()),result.getOutstanding());
 
         pieView.setPercentageBackgroundColor(getResources().getColor(R.color.black));
        // pieView.setInnerText("75%");
@@ -91,7 +91,7 @@ public class LoanSummaryFragment extends Fragment {
         pieView.startAnimation(animation);
     }
 
-    private float getPercentage(int loanAmount, float outStandingAmount){
+    private float getPercentage(float loanAmount, float outStandingAmount){
         return (float) ((outStandingAmount / loanAmount) * 100);
     }
 

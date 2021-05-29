@@ -1,5 +1,6 @@
 package com.mtechcomm.nanocreditnative.activities;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -169,8 +170,7 @@ public class VerifyPhoneActivity extends AppCompatActivity {
                                 phoneVerified(true);
 
                                 Intent intent = new Intent();
-                                //intent.putExtra("fragmentName", "RegDetailsFragment");
-                                setResult(MY_REQUEST_CODE, intent);
+                                setResult(Activity.RESULT_OK, intent);
                                 finish();
 
 //                                ((RegisterActivity) getApplicationContext()).onNextFormClicked("RegDetailsFragment");
@@ -216,7 +216,7 @@ public class VerifyPhoneActivity extends AppCompatActivity {
 
                                         Intent intent = new Intent();
                                         //intent.putExtra("fragmentName", "RegDetailsFragment");
-                                        setResult(MY_REQUEST_CODE, intent);
+                                        setResult(Activity.RESULT_CANCELED, intent);
                                         finish();
 
                                     }else {
@@ -228,6 +228,22 @@ public class VerifyPhoneActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if (source.equals("register")){
+
+            phoneVerified(false);
+
+            Intent intent = new Intent();
+            setResult(Activity.RESULT_CANCELED, intent);
+            finish();
+
+        }else {
+            finish();
+        }
     }
 
     private void saveUserInfo(AppUser appUser) {

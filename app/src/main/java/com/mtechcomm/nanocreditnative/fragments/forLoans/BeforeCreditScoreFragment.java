@@ -96,13 +96,15 @@ public class BeforeCreditScoreFragment extends Fragment {
 
 //                    DesignerToast.Error(getContext(),"Unfortunately, your Android Version '" + androidVersion + "' is not yet supported",Gravity.CENTER,Toast.LENGTH_SHORT);
 
-                    if (androidVersion >= 10.0){
+                    setupLenddo();
 
-                        DesignerToast.Error(getContext(),"Unfortunately, your Android Version '" + androidVersion + "' is not yet supported for Credit.",Gravity.CENTER,Toast.LENGTH_SHORT);
-                        before_credit_score_proceed_to_credit_score_btn_yes.setEnabled(true);
-                    }else{
-                        setupLenddo();
-                    }
+//                    if (androidVersion >= 10.0){
+//
+//                        DesignerToast.Error(getContext(),"Unfortunately, your Android Version '" + androidVersion + "' is not yet supported for Credit.",Gravity.CENTER,Toast.LENGTH_SHORT);
+//                        before_credit_score_proceed_to_credit_score_btn_yes.setEnabled(true);
+//                    }else{
+//                        setupLenddo();
+//                    }
 
                 }else {
                     DesignerToast.Error(getContext(),"not connected to the internet",Gravity.CENTER,Toast.LENGTH_SHORT);
@@ -142,7 +144,7 @@ public class BeforeCreditScoreFragment extends Fragment {
                             ((Activity) getContext()).getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
                         }
 
-                        DesignerToast.Success(getContext(), "information gathering success !!!", Gravity.CENTER, Toast.LENGTH_SHORT);
+                        DesignerToast.Success(getContext(), "information gathering, success !!!", Gravity.CENTER, Toast.LENGTH_SHORT);
                         before_credit_score_proceed_to_credit_score_btn_yes.setEnabled(true);
 //                        slideUpDown(proceed_to_credit_score);
 //                        slideUpDown(proceed_to_show_loan_app_info);

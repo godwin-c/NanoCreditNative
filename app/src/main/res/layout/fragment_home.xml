@@ -71,244 +71,296 @@
         </LinearLayout>
 
         <!--        Lower part of the View-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_height="0dp">-->
 
-            <!--            This part holds the first 3 buttons-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="10dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-<!--                The first of the first 3 buttons-->
+                <!--            This part holds the first 3 buttons-->
                 <LinearLayout
-                    android:id="@+id/home_apply_loan"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
+                    android:padding="5dp"
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                    <!--                The first of the first 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_apply_loan"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/apply_for_loan" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:padding="0dp"
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="2dp"
+                            android:padding="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/apply_for_loan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="0dp"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="Apply for Loan"
+                            android:textColor="@color/white"  />
+                    </LinearLayout>
+
+                    <!--                The second of the first 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_pay_schedule"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Apply for Loan"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color"  />
-                </LinearLayout>
-
-<!--                The second of the first 3 buttons-->
-                <LinearLayout
-                    android:id="@+id/home_pay_schedule"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/payment_schedule" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:padding="5dp"
-                        android:layout_margin="10dp"
-                        android:text="Schedule"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color" />
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/payment_schedule" />
 
-<!--                The 3rd of the first 3 buttons-->
-                <LinearLayout
-                    android:id="@+id/home_avail_discounts"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:text="Schedule"
+                            android:textColor="@color/white" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/availlable_discounts" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                    <!--                The 3rd of the first 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_avail_discounts"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:padding="5dp"
-                        android:layout_margin="10dp"
-                        android:text="Discounts"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color" />
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="2dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/availlable_discounts" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:text="Discounts"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
+                <!--            This part holds the second 3 buttons-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <!--                The first of the 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_loan_summary"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="2dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/loan_summary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:text="Summary"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <!--                The second of the 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_loan_history"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/loan_history" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="5dp"
+                            android:layout_margin="2dp"
+                            android:gravity="center"
+                            android:text="History"
+                            android:textColor="@color/white"  />
+                    </LinearLayout>
+
+                    <!--                The third of the 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_year_to_date"
+                        android:clickable="true"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:padding="1dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/year_to_date" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="Year to Date"
+                            android:textColor="@color/white"  />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <!--                The first of the first 3 buttons-->
+
+
+                    <!--                The 3rd of the first 3 buttons-->
+                    <LinearLayout
+                        android:id="@+id/home_repay_loan"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:padding="3dp"
+                        android:background="@color/purple_btn_color"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="3dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/loan_repayment" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:text="Repay Loan"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
-
-            <!--            This part holds the second 3 buttons-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:orientation="horizontal">
-
-<!--                The first of the 3 buttons-->
-                <LinearLayout
-                    android:id="@+id/home_loan_summary"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/loan_summary" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:layout_margin="10dp"
-                        android:text="Summary"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color" />
-
-                </LinearLayout>
-
-<!--                The second of the 3 buttons-->
-                <LinearLayout
-                    android:id="@+id/home_loan_history"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_margin="10dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/loan_history" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:padding="5dp"
-                        android:layout_margin="10dp"
-                        android:gravity="center"
-                        android:text="History"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color"  />
-                </LinearLayout>
-
-<!--                The third of the 3 buttons-->
-                <LinearLayout
-                    android:id="@+id/home_year_to_date"
-                    android:clickable="true"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/purple_btn_color"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_margin="10dp"
-                        android:padding="2dp"
-                        android:layout_weight="2"
-                        android:src="@drawable/year_to_date" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:textSize="10sp"
-                        android:textAppearance="@android:style/TextAppearance.Small"
-                        android:padding="5dp"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Year to Date"
-                        android:background="@drawable/button_bg"
-                        android:textColor="@color/purple_btn_color"  />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+<!--        </ScrollView>-->
 
     </LinearLayout>
 

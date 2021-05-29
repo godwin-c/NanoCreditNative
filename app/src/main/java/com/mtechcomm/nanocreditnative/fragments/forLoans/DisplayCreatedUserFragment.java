@@ -21,8 +21,6 @@ import com.mtechcomm.nanocreditnative.classes.AppUser;
 import com.mtechcomm.nanocreditnative.classes.CustomCallBack;
 import com.mtechcomm.nanocreditnative.classes.NetworkAvaillabilityClass;
 import com.mtechcomm.nanocreditnative.fragments.ApplyForLoanFragment;
-import com.mtechcomm.nanocreditnative.models.CustomerEnquiryResult;
-import com.mtechcomm.nanocreditnative.models.CustomerModelResult;
 import com.mtechcomm.nanocreditnative.models.UpdateUserDataModel;
 import com.mtechcomm.nanocreditnative.models.UpdateUserDataResult;
 import com.mtechcomm.nanocreditnative.net.Mtech_API_Interface;
@@ -67,21 +65,22 @@ public class DisplayCreatedUserFragment extends Fragment {
 
         appUser = retrieveUser();
 
-        CustomerModelResult customerModelResult = getCustomerModelResult();
-        CustomerEnquiryResult customerEnquiryResult = getCustomerEnquired();
+//        CustomerModelResult customerModelResult = getCustomerModelResult();
+//        CustomerEnquiryResult customerEnquiryResult = getCustomerEnquired();
 
         String name = appUser.getSurname() + " " + appUser.getOthernames();
         //String idNumber = "";
 
-        if (customerModelResult != null){
-            //idNumber = customerModelResult.getDocument();
-            customerID = customerModelResult.getCustomerId();
-           // source = "customerModel";
-        }else if(customerEnquiryResult != null){
-            //idNumber = customerEnquiryResult.
-            customerID = customerEnquiryResult.getCustomerId();
-           // source = "customerEnquiry";
-        }
+        customerID = appUser.getCustomerId();
+//        if (customerModelResult != null){
+//            //idNumber = customerModelResult.getDocument();
+//            customerID = customerModelResult.getCustomerId();
+//           // source = "customerModel";
+//        }else if(customerEnquiryResult != null){
+//            //idNumber = customerEnquiryResult.
+//            customerID = customerEnquiryResult.getCustomerId();
+//           // source = "customerEnquiry";
+//        }
 
         display_created_user_customer_created_name.setText(name);
         display_created_user_customer_created_ID.setText("Customer ID : " + customerID );
@@ -159,29 +158,29 @@ public class DisplayCreatedUserFragment extends Fragment {
         return appUser;
     }
 
-    private CustomerEnquiryResult getCustomerEnquired(){
-        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//    private CustomerEnquiryResult getCustomerEnquired(){
+//        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//
+//        Gson gson = new Gson();
+//        String json = preferences.getString(getString(R.string.customer_enquiry_result), "");
+//        if (json.equals("")){
+//            return  null;
+//        }
+//        CustomerEnquiryResult customerEnquiryResult = gson.fromJson(json, CustomerEnquiryResult.class);
+//
+//        return customerEnquiryResult;
+//    }
 
-        Gson gson = new Gson();
-        String json = preferences.getString(getString(R.string.customer_enquiry_result), "");
-        if (json.equals("")){
-            return  null;
-        }
-        CustomerEnquiryResult customerEnquiryResult = gson.fromJson(json, CustomerEnquiryResult.class);
-
-        return customerEnquiryResult;
-    }
-
-    private CustomerModelResult getCustomerModelResult(){
-        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
-
-        Gson gson = new Gson();
-        String json = preferences.getString(getString(R.string.created_customer_result), "");
-        if (json.equals("")){
-            return  null;
-        }
-        CustomerModelResult customerModelResult = gson.fromJson(json, CustomerModelResult.class);
-
-        return customerModelResult;
-    }
+//    private CustomerModelResult getCustomerModelResult(){
+//        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);
+//
+//        Gson gson = new Gson();
+//        String json = preferences.getString(getString(R.string.created_customer_result), "");
+//        if (json.equals("")){
+//            return  null;
+//        }
+//        CustomerModelResult customerModelResult = gson.fromJson(json, CustomerModelResult.class);
+//
+//        return customerModelResult;
+//    }
 }

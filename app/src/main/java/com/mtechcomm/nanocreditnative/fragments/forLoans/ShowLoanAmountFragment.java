@@ -2,6 +2,7 @@ package com.mtechcomm.nanocreditnative.fragments.forLoans;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,7 +28,6 @@ import com.mtechcomm.nanocreditnative.MainActivity;
 import com.mtechcomm.nanocreditnative.R;
 import com.mtechcomm.nanocreditnative.classes.AppUser;
 import com.mtechcomm.nanocreditnative.classes.CustomCallBack;
-import com.mtechcomm.nanocreditnative.classes.NetworkAvaillabilityClass;
 import com.mtechcomm.nanocreditnative.fragments.ApplyForLoanFragment;
 import com.mtechcomm.nanocreditnative.models.AuthenticationResponse;
 import com.mtechcomm.nanocreditnative.models.CheckScoreReadyResult;
@@ -36,11 +36,9 @@ import com.mtechcomm.nanocreditnative.models.LoanOfferModel;
 import com.mtechcomm.nanocreditnative.models.LoanOfferResult;
 import com.mtechcomm.nanocreditnative.models.MyErrorClass;
 import com.mtechcomm.nanocreditnative.models.UpdateLoanDataModel;
-import com.mtechcomm.nanocreditnative.models.UpdateUserDataResult;
-import com.mtechcomm.nanocreditnative.net.Mtech_API_Interface;
-import com.mtechcomm.nanocreditnative.net.Mtech_API_client;
 import com.mtechcomm.nanocreditnative.net.NLP_API_Interface;
 import com.mtechcomm.nanocreditnative.net.NLP_Api_Client;
+import com.mtechcomm.nanocreditnative.services.UpdateLoanInfoService;
 import com.vdx.designertoast.DesignerToast;
 
 import java.lang.reflect.Type;
@@ -78,7 +76,7 @@ public class ShowLoanAmountFragment extends Fragment {
                 if (fm != null) {
                     if (fm.getBackStackEntryCount() > 0) {
                         fm.popBackStack();
-                        Log.e( "Frag","back" );
+                        Log.e( "Frag", fm.getBackStackEntryAt(0) + " is back" );
 
                     }
 
@@ -89,7 +87,7 @@ public class ShowLoanAmountFragment extends Fragment {
                                 continue;
                             }
                             if (frag.isVisible()) {
-                                Log.e( "Frag","Visible" );
+                                Log.e( "Frag",frag.getTag()+" is Visible" );
                             }
                         }
                     }
@@ -131,7 +129,7 @@ public class ShowLoanAmountFragment extends Fragment {
                 if (!entered_amount.equals("")) {
 
                     if (!entered_amount.matches("^[0-9]*$")){
-                        DesignerToast.Error(getContext(), "Invalid Amount entered", Gravity.CENTER, Toast.LENGTH_SHORT);
+                        DesignerToast.Error(getContext(), "Invalid Amount entered. Must be only numbers", Gravity.CENTER, Toast.LENGTH_SHORT);
                         return;
                     }
 
@@ -265,9 +263,10 @@ public class ShowLoanAmountFragment extends Fragment {
 
                     LoanOfferResult model = response.body();
 
+
                     AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
                     dialog.setTitle("Loan Processed")
-                            .setMessage("please confirm your acceptance to take a loan of " + amount + " from Nano Credit")
+                            .setMessage("please confirm your acceptance to take a loan of " + model.getAmount() + " from Nano Credit")
                             .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialoginterface, int i) {
                                     dialoginterface.cancel();
@@ -283,15 +282,22 @@ public class ShowLoanAmountFragment extends Fragment {
 
                 } else {
                     Gson gson = new Gson();
-                    Type type = new TypeToken<MyErrorClass>() {
-                    }.getType();
-                    MyErrorClass errorResponse = gson.fromJson(response.errorBody().charStream(), type);
+                    Type type = new TypeToken<MyErrorClass>() {}.getType();
+                    String error = "";
+                    try {
+                        MyErrorClass errorResponse = gson.fromJson(response.errorBody().charStream(), type);
 
-                    Log.d(TAG, "onResponse:  ret " + errorResponse.getError());
-                    Log.d(TAG, "onResponse:  ret " + getClass().getEnclosingMethod().getName());
-                    Log.d(TAG, "onResponse: " + response.code());
+                        error = errorResponse.getError();
 
-                    DesignerToast.Error(getContext(),"Oops!!! "+errorResponse.getError(),Gravity.CENTER,Toast.LENGTH_SHORT);
+                        Log.d(TAG, "onResponse:  ret " + errorResponse.getError());
+                        Log.d(TAG, "onResponse:  ret " + getClass().getEnclosingMethod().getName());
+                        Log.d(TAG, "onResponse: " + response.code());
+
+                    }catch (Exception e){
+                        error = e.getMessage();
+                    }
+
+                    DesignerToast.Error(getContext(),"Oops!!! " + error,Gravity.CENTER,Toast.LENGTH_SHORT);
                 }
 
             }
@@ -335,14 +341,14 @@ public class ShowLoanAmountFragment extends Fragment {
                     Log.d(TAG, "onResponse:  ret " + getClass().getEnclosingMethod().getName());
                     Log.d(TAG, "onResponse: " + response.code());
 
-                    appUser = retrieveUser();
+                    UpdateLoanDataModel updateLoanDataModel = new UpdateLoanDataModel(model.getApplicationId()+"",model.getStatus(),model.getCustomerId()+"",model.getAmount()+"",model.getStartDate(),model.getEndDate());
 
-                    appUser.setLoanAmount(model.getAmount());
-                    appUser.setLoanStartDate(model.getStartDate());
-                    appUser.setLoanEndDate(model.getEndDate());
-                    appUser.setLoanStatus(model.getStatus());
+                    final Gson gson = new Gson();
+                    String serializedObject = gson.toJson(updateLoanDataModel);
 
-                    saveUserInfo(appUser);
+                    Intent intent = new Intent(getContext(), UpdateLoanInfoService.class);
+                    intent.putExtra("data", serializedObject);
+                    getContext().startService(intent);
 
                     AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
                     dialog.setTitle( "Congratulations !!!" )
@@ -352,7 +358,8 @@ public class ShowLoanAmountFragment extends Fragment {
                                     dialoginterface.dismiss();
 
 
-                                    updateUserLoanInfo(appUser.getLoanApplicationID());
+                                    ((MainActivity) getActivity()).finish();
+                                    //updateUserLoanInfo(appUser.getLoanApplicationID());
 
 //                                    HomeFragment homeFragment = (HomeFragment) getActivity().getSupportFragmentManager().findFragmentByTag("HomeFragment");
 ////                                    ((menufeedActivity) getActivity()).setCountText(getCount);
@@ -392,49 +399,49 @@ public class ShowLoanAmountFragment extends Fragment {
         }));
     }
 
-    private void updateUserLoanInfo(int loanId){
-        NetworkAvaillabilityClass networkAvaillabilityClass = new NetworkAvaillabilityClass(getContext());
-
-        if (networkAvaillabilityClass.hasNetwork()){
-
-
-            //UpdateUserDataModel updateUserDataModel = new UpdateUserDataModel(String.valueOf(customerID), appUser.getDocumentID(), appUser.getEmailAddress());
-            UpdateLoanDataModel updateUserDataModel = new UpdateLoanDataModel(String.valueOf(loanId),true);
-
-            Mtech_API_Interface mtech_api_interface = Mtech_API_client.getClient().create(Mtech_API_Interface.class);
-            Call<UpdateUserDataResult> call = mtech_api_interface.updateLoanInfo(updateUserDataModel);
-            call.enqueue(new CustomCallBack<>(getContext(), new Callback<UpdateUserDataResult>() {
-                @Override
-                public void onResponse(Call<UpdateUserDataResult> call, Response<UpdateUserDataResult> response) {
-                    if (response.code() == 201){
-
-                        Log.d(TAG, "onResponse: " + response.body().getSuccess());
-                        Log.d(TAG, "onResponse:  ret " + getClass().getEnclosingMethod().getName());
-                        Log.d(TAG, "onResponse: " + response.code());
-
-                        ((MainActivity) getActivity()).finish();
-                       // callMainFragment();
-
-                    }else {
-
-                        DesignerToast.Error(getContext(),"Oops!!! let's try again",Gravity.CENTER,Toast.LENGTH_SHORT);
-                        updateUserLoanInfo(appUser.getLoanApplicationID());
-
-                    }
-                }
-
-                @Override
-                public void onFailure(Call<UpdateUserDataResult> call, Throwable t) {
-                    Log.d(TAG, "onFailure:  ret " + getClass().getEnclosingMethod().getName());
-                    Log.d(TAG, "onFailure: " + t.getMessage());
-                }
-            }));
-
-        }else{
-            DesignerToast.Error(getContext(),"You may not be connected to the internet", Gravity.CENTER, Toast.LENGTH_SHORT);
-        }
-
-    }
+//    private void updateUserLoanInfo(int loanId){
+//        NetworkAvaillabilityClass networkAvaillabilityClass = new NetworkAvaillabilityClass(getContext());
+//
+//        if (networkAvaillabilityClass.hasNetwork()){
+//
+//
+//            //UpdateUserDataModel updateUserDataModel = new UpdateUserDataModel(String.valueOf(customerID), appUser.getDocumentID(), appUser.getEmailAddress());
+//            UpdateLoanDataModel updateUserDataModel = new UpdateLoanDataModel(String.valueOf(loanId),true);
+//
+//            Mtech_API_Interface mtech_api_interface = Mtech_API_client.getClient().create(Mtech_API_Interface.class);
+//            Call<UpdateUserDataResult> call = mtech_api_interface.updateLoanInfo(updateUserDataModel);
+//            call.enqueue(new CustomCallBack<>(getContext(), new Callback<UpdateUserDataResult>() {
+//                @Override
+//                public void onResponse(Call<UpdateUserDataResult> call, Response<UpdateUserDataResult> response) {
+//                    if (response.code() == 201){
+//
+//                        Log.d(TAG, "onResponse: " + response.body().getSuccess());
+//                        Log.d(TAG, "onResponse:  ret " + getClass().getEnclosingMethod().getName());
+//                        Log.d(TAG, "onResponse: " + response.code());
+//
+//                        ((MainActivity) getActivity()).finish();
+//                       // callMainFragment();
+//
+//                    }else {
+//
+//                        DesignerToast.Error(getContext(),"Oops!!! let's try again",Gravity.CENTER,Toast.LENGTH_SHORT);
+//                        updateUserLoanInfo(appUser.getLoanApplicationID());
+//
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(Call<UpdateUserDataResult> call, Throwable t) {
+//                    Log.d(TAG, "onFailure:  ret " + getClass().getEnclosingMethod().getName());
+//                    Log.d(TAG, "onFailure: " + t.getMessage());
+//                }
+//            }));
+//
+//        }else{
+//            DesignerToast.Error(getContext(),"You may not be connected to the internet", Gravity.CENTER, Toast.LENGTH_SHORT);
+//        }
+//
+//    }
 
     private CheckScoreReadyResult getScoreready() {
         SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.sharepref_files), Context.MODE_PRIVATE);

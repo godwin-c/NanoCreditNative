@@ -27,15 +27,21 @@ public class NetworkProviderClass {
         Log.d(TAG, TAG2 + ": " + phoneNumber);
 
         if (!phoneNumber.startsWith("+")) {
-            if (!phoneNumber.startsWith("2")){
-                sub = phoneNumber.substring(0, 3);
-            }else{
-                sub = phoneNumber.substring(3, 4);
+            if (phoneNumber.length() > 10){
+                sub = phoneNumber.substring(3, 5);
                 sub = "0" + sub;
+            }else{
+                if (phoneNumber.startsWith("0")){
+                    sub = phoneNumber.substring(0, 3);
+                }else {
+                    sub = phoneNumber.substring(0, 2);
+                    sub = "0" + sub;
+                }
             }
 
+
         } else {
-            sub = phoneNumber.substring(4, 5);
+            sub = phoneNumber.substring(4, 6);
             sub = "0" + sub;
         }
 

@@ -172,6 +172,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        finish();
+    }
+
     private void performLogin(String username, String password) {
         Mtech_API_Interface mtech_api_interface = Mtech_API_client.getClient().create(Mtech_API_Interface.class);
         Call<LoginUserResponseModel> call = mtech_api_interface.loginUser(new LoginUserDetailsModel(username,password));
@@ -214,11 +220,6 @@ public class LoginActivity extends AppCompatActivity {
 
                     String last_login = model.getLast_login();
 
-                    // "cid": null,
-//             "docid": null,
-//             "loanid": "5050",
-//             "lstatus": "t",
-//             "last_login_datetime": "2020-09-04 18:48:45.642855"
 
                     AppUser appUser = new AppUser(model.getFirstname(),model.getLastname(),phones,model.getEmail(),
                             model.getDob(),model.getPassword(),model.getAccountnumber(),verified,

@@ -3,6 +3,7 @@ package com.mtechcomm.nanocreditnative.fragments.forLoans;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -15,10 +16,13 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
@@ -45,6 +49,7 @@ import com.vdx.designertoast.DesignerToast;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -144,13 +149,13 @@ public class CreateUserFragment extends Fragment {
         ArrayList<String> phoneList = new ArrayList<>();
         phoneList.add(phone);
 
-        CreateUserDetails userDetails = new CreateUserDetails(accountNumber,IDtext);
-        saveUserDetails(userDetails);
-
-        appUser.setAccountNumber(accountNumber);
-        appUser.setPhones(phoneList);
-        appUser.setDocumentID(IDtext);
-        saveUserInfo(appUser);
+//        CreateUserDetails userDetails = new CreateUserDetails(accountNumber,IDtext);
+//        saveUserDetails(userDetails);
+//
+//        appUser.setAccountNumber(accountNumber);
+//        appUser.setPhones(phoneList);
+//        appUser.setDocumentID(IDtext);
+//        saveUserInfo(appUser);
 
         NetworkProviderClass networkProviderClass = new NetworkProviderClass(getContext(),TAG);
         String network = networkProviderClass.getNetwork(phone);
@@ -160,41 +165,90 @@ public class CreateUserFragment extends Fragment {
 
         if (network != null) {
 
-            Toast.makeText(getContext(), "Phone number network is " + network, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getContext(), "Phone number network is " + network, Toast.LENGTH_SHORT).show();
 
-            Log.d(TAG, "checkValidation: " + phone);
-
-            ArrayList<HashMap<String, String>> phoneAndNetwork = new ArrayList<HashMap<String, String>>();
-
-            HashMap<String, String> numMap = new HashMap<String, String>();
-            try {
-                numMap.put("number", phone);
-                numMap.put("company", network);
-
-                phoneAndNetwork.add(numMap);
-            } catch (Exception e) {
-
-            }
-
-
-            customerModel = new CustomerModel(appUser.getOthernames(), appUser.getSurname(), IDtext, phoneAndNetwork, accountNumber);
-
-
-            NetworkAvaillabilityClass networkAvaillabilityClass = new NetworkAvaillabilityClass(getContext());
-
-            if (networkAvaillabilityClass.hasNetwork()){
-                getToken();
-
-            }else{
-                DesignerToast.Error(getContext(),"You may not be connected to the internet",Gravity.CENTER,Toast.LENGTH_SHORT);
-            }
-
+            getNetworkWithPhone(IDtext, phone, network, accountNumber);
 
         } else {
             DesignerToast.Error(getContext(), "Phone number may be incorrect", Gravity.CENTER, Toast.LENGTH_SHORT);
 
         }
 
+    }
+
+    private void getNetworkWithPhone(String IDtext, final String phone, String networkGotten, String accountNumber) {
+        AlertDialog.Builder alertName = new AlertDialog.Builder(getContext());
+        final TextView TXTnetProviderGotten = new TextView(getContext());
+        final EditText ETDgetNetProvider = new EditText(getContext());
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        params.setMargins(10,10,10,10);
+        TXTnetProviderGotten.setLayoutParams(params);
+
+        TXTnetProviderGotten.setText("Is your network provider '" + networkGotten.toUpperCase(Locale.getDefault()) + "'? If yes, click \"Accept\" else enter your network provider name");
+        ETDgetNetProvider.setHint("enter network provider");
+        alertName.setTitle("Network Provider");
+        LinearLayout layoutName = new LinearLayout(getContext());
+        layoutName.setOrientation(LinearLayout.VERTICAL);
+        layoutName.addView(TXTnetProviderGotten); // displays the user input bar
+        layoutName.addView(ETDgetNetProvider);
+        alertName.setView(layoutName);
+
+        alertName.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                String txt; // variable to collect user input
+                if (ETDgetNetProvider.getText().toString().equalsIgnoreCase("yes") || (ETDgetNetProvider.getText().toString().trim().equals(""))){
+
+                    txt = networkGotten;
+                }else{
+                    txt = ETDgetNetProvider.getText().toString();
+                }
+
+
+                Log.d(TAG, "checkValidation: " + phone);
+
+                ArrayList<HashMap<String, String>> phoneAndNetwork = new ArrayList<HashMap<String, String>>();
+
+                HashMap<String, String> numMap = new HashMap<String, String>();
+                try {
+                    numMap.put("number", phone);
+                    numMap.put("company", txt);
+
+                    phoneAndNetwork.add(numMap);
+                } catch (Exception e) {
+
+                }
+
+
+                customerModel = new CustomerModel(appUser.getOthernames(), appUser.getSurname(), IDtext, phoneAndNetwork, accountNumber);
+
+
+                NetworkAvaillabilityClass networkAvaillabilityClass = new NetworkAvaillabilityClass(getContext());
+
+                if (networkAvaillabilityClass.hasNetwork()){
+
+                    // String actualNetwork = getNetworkWithPhone(networkGotten);
+
+                    dialog.dismiss();
+
+                    getToken();
+
+                }else{
+                    DesignerToast.Error(getContext(),"You may not be connected to the internet",Gravity.CENTER,Toast.LENGTH_SHORT);
+                }
+                //collectInput(); // analyze input (txt) in this method
+
+
+            }
+        });
+
+        alertName.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                dialog.cancel(); // closes dialog alertName.show() // display the dialog
+            }
+        });
+
+        alertName.show();
     }
 
     private void getToken() {
@@ -255,7 +309,20 @@ public class CreateUserFragment extends Fragment {
                     Log.d(TAG, "onResponse: " + model.getCustomerId());
 
 
-                    saveCustomerResult(model);
+                   // saveCustomerResult(model);
+
+                    ArrayList<HashMap<String, String>> hashMaps = model.getPhones();
+
+                    ArrayList<String> phones = new ArrayList<>();
+                    for (int i = 0; i < hashMaps.size(); i++){
+                        HashMap<String, String> hashMap = hashMaps.get(i);
+                        phones.add(hashMap.get("number"));
+                    }
+
+
+                    AppUser new_appUser = new AppUser(model.getSurname(),model.getName(), phones,appUser.getEmailAddress(),appUser.getDate_of_birth(),appUser.getPassword(),model.getAccount(),appUser.isPhoneVerified(),model.getCustomerId(), model.getDocument(), appUser.getLoanApplicationID(), appUser.getLoanStatus(),appUser.getLast_login_datetime());
+
+                    saveUserInfo(new_appUser);
 
                     callMainFragment();
 

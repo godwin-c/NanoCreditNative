@@ -22,6 +22,9 @@ public class LoanOfferResult {
     @SerializedName("info")
     private String info;
 
+    @SerializedName("mandateId")
+    private String mandateId;
+
     @SerializedName("outstanding")
     private float outstanding;
 
@@ -34,14 +37,14 @@ public class LoanOfferResult {
     @SerializedName("warning")
     private boolean warning;
 
-    public LoanOfferResult(int amount, int applicationId, int creditProduct, int customerId,
-                           String endDate, String info, float outstanding, String startDate, String status, boolean warning) {
+    public LoanOfferResult(int amount, int applicationId, int creditProduct, int customerId, String endDate, String info, String mandateId, float outstanding, String startDate, String status, boolean warning) {
         this.amount = amount;
         this.applicationId = applicationId;
         this.creditProduct = creditProduct;
         this.customerId = customerId;
         this.endDate = endDate;
         this.info = info;
+        this.mandateId = mandateId;
         this.outstanding = outstanding;
         this.startDate = startDate;
         this.status = status;
@@ -96,11 +99,19 @@ public class LoanOfferResult {
         this.info = info;
     }
 
+    public String getMandateId() {
+        return mandateId;
+    }
+
+    public void setMandateId(String mandateId) {
+        this.mandateId = mandateId;
+    }
+
     public float getOutstanding() {
         return outstanding;
     }
 
-    public void setOutstanding(int outstanding) {
+    public void setOutstanding(float outstanding) {
         this.outstanding = outstanding;
     }
 
